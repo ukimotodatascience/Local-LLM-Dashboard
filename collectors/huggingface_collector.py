@@ -87,6 +87,28 @@ class HuggingFaceCollector:
                 or any("gguf" in str(t).lower() for t in tags)
             )
 
+            # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み、画像検出等) の除外
+            pipeline_tag = m.get("pipeline_tag")
+            is_llm = False
+            if pipeline_tag in ["text-generation", "conversational"]:
+                is_llm = True
+            elif not pipeline_tag and has_gguf:
+                # pipeline_tagが未定義でもGGUFであり、かつ非LLMの特定キーワードがモデルIDに含まれなければ許可
+                id_lower = model_id.lower()
+                non_llm_kws = [
+                    "whisper",
+                    "embedding",
+                    "sentence-transformer",
+                    "vit-",
+                    "nsfw-",
+                    "stable-diffusion",
+                ]
+                if not any(kw in id_lower for kw in non_llm_kws):
+                    is_llm = True
+
+            if not is_llm:
+                continue
+
             # 最終更新日時
             last_modified_str = m.get("lastModified")
 

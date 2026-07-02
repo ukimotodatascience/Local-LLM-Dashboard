@@ -258,7 +258,7 @@ input, select, button {
 
 /* Responsive Overrides */
 @media (max-width: 768px) {
-  aside {
+  aside.app-sidebar {
     transform: translateX(-100%);
     position: fixed !important;
     top: 0;
@@ -267,7 +267,7 @@ input, select, button {
     transition: var(--transition-smooth);
   }
 
-  aside.active {
+  aside.app-sidebar.active {
     transform: translateX(0);
   }
 

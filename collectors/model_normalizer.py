@@ -131,30 +131,56 @@ class ModelNormalizer:
                 family = fam
                 break
 
-        # 2. 推定モデルサイズの特定 (例: 7b, 8b, 1.5b, 70b)
+        # 2. 推定モデルサイズの特定 (例: 7b, 8b, 1.5b, 70b, 500m)
         size = "unknown"
+        # P2指摘対応: 1B未満のMillionパラメータ(M)モデルサイズも抽出できるように [bBmM] をサポート
         size_match = re.search(
-            r"(?:^|[^a-zA-Z])(\d+(?:\.\d+)?)[bB](?:[^a-zA-Z]|$)", name
+            r"(?:^|[^a-zA-Z])(\d+(?:\.\d+)?)[bBmM](?:[^a-zA-Z]|$)", name
         )
         if size_match:
-            size = f"{size_match.group(1).upper()}B"
+            unit = name[size_match.start(0) : size_match.end(0)].lower()
+            if "m" in unit:
+                size = f"{size_match.group(1).upper()}M"
+            else:
+                size = f"{size_match.group(1).upper()}B"
         else:
             # タグから探す
             for t in tags:
-                tag_match = re.search(r"^(\d+(?:\.\d+)?)[bB]$", str(t))
+                tag_match = re.search(r"^(\d+(?:\.\d+)?)[bBmM]$", str(t))
                 if tag_match:
-                    size = f"{tag_match.group(1).upper()}B"
+                    unit = str(t).lower()
+                    if "m" in unit:
+                        size = f"{tag_match.group(1).upper()}M"
+                    else:
+                        size = f"{tag_match.group(1).upper()}B"
                     break
 
         # 3. 量子化形式の特定
         quant = "FP16"  # デフォルト
-        if "gguf" in model_id.lower() or "gguf" in tags:
+        if "gguf" in model_id_lower or "gguf" in tags:
             quant = "GGUF"
-        elif "gptq" in model_id.lower() or "gptq" in tags:
+            # P2指摘対応: GGUFファイル名等に含まれる Q-level (Q8_0, Q4_K_M 等) をパースして反映
+            q_match = re.search(
+                r"(?:^|[^a-zA-Z])(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)(?:[^a-zA-Z\d_]|$)",
+                model_id_lower,
+            )
+            if q_match:
+                quant = f"GGUF ({q_match.group(1).upper()})"
+            else:
+                for t in tags:
+                    t_str = str(t).lower()
+                    qt_match = re.search(
+                        r"^(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)$",
+                        t_str,
+                    )
+                    if qt_match:
+                        quant = f"GGUF ({qt_match.group(1).upper()})"
+                        break
+        elif "gptq" in model_id_lower or "gptq" in tags:
             quant = "GPTQ"
-        elif "awq" in model_id.lower() or "awq" in tags:
+        elif "awq" in model_id_lower or "awq" in tags:
             quant = "AWQ"
-        elif "exl2" in model_id.lower():
+        elif "exl2" in model_id_lower:
             quant = "EXL2"
         else:
             for t in tags:
@@ -179,8 +205,12 @@ class ModelNormalizer:
         """Ollamaカタログとのマッチングを行い、対応状況とURLを返す"""
         model_id_lower = model_id.lower()
 
-        # 静的カタログに確実に存在する主要モデルのみを Ollama 対応とする
-        for ol in ol_models:
+        # P2指摘対応: カタログ名が長い（より具体的）ものを優先して一致判定するため、モデル名文字数の降順でソート
+        sorted_ol_models = sorted(
+            ol_models, key=lambda x: len(x["model_name"]), reverse=True
+        )
+
+        for ol in sorted_ol_models:
             ol_name = ol["model_name"]
 
             # 1. カタログモデル名がモデルIDに含まれるか (例: "llama3.2" in "meta-llama/Llama-3.2-3B")
@@ -208,7 +238,8 @@ class ModelNormalizer:
 
         model_id_lower = model_id.lower()
         fam_key = family.lower()
-        size_key = size.lower().replace("b", "")
+        # size が 500M などの場合はMを考慮
+        size_key = size.lower().replace("b", "").replace("m", "")
 
         for or_m in or_models:
             or_id = or_m["model_id"].lower()
@@ -216,11 +247,30 @@ class ModelNormalizer:
             # ファミリー名が含まれ、かつサイズが一致することを必須とする
             if fam_key in or_id:
                 or_size_match = re.search(
-                    r"(?:^|[^a-zA-Z])(\d+(?:\.\d+)?)[bB](?:[^a-zA-Z]|$)", or_id
+                    r"(?:^|[^a-zA-Z])(\d+(?:\.\d+)?)[bBmM](?:[^a-zA-Z]|$)", or_id
                 )
                 if or_size_match:
                     or_size = or_size_match.group(1)
                     if or_size == size_key:
+                        # P2指摘対応: 特性バリアントの整合性確認 (coder, vision/vl などの有無が一致すること)
+                        is_coder_hf = "coder" in model_id_lower
+                        is_coder_or = "coder" in or_id
+                        if is_coder_hf != is_coder_or:
+                            continue
+
+                        is_vl_hf = "vl" in model_id_lower or "vision" in model_id_lower
+                        is_vl_or = "vl" in or_id or "vision" in or_id
+                        if is_vl_hf != is_vl_or:
+                            continue
+
+                        # P2指摘対応: 世代バージョンの整合性確認 (例: qwen2.5 と qwen3, llama3.1 と llama3 などのミスマッチ防止)
+                        versions = ["2.5", "3.1", "3.2", "3", "4"]
+                        hf_versions = [v for v in versions if v in model_id_lower]
+                        or_versions = [v for v in versions if v in or_id]
+                        if hf_versions and or_versions:
+                            if not (set(hf_versions) & set(or_versions)):
+                                continue
+
                         # 指導データかどうかの整合性も考慮
                         is_instruct_hf = (
                             "instruct" in model_id_lower
@@ -252,12 +302,15 @@ class ModelNormalizer:
             use_cases.append("Coding")
 
         # 2. Japanese
-        ja_kws = ["japanese", "ja", "nihongo"]
-        if (
-            any(kw in model_id_lower for kw in ja_kws)
+        # P2指摘対応: 部分一致による誤判定 (Ministral や Janus -> ja など) を防ぐため、単語境界および完全タグ一致でチェック
+        has_ja_keyword = (
+            "japanese" in model_id_lower
+            or "nihongo" in model_id_lower
+            or re.search(r"(?:^|[^a-zA-Z])ja(?:[^a-zA-Z]|$)", model_id_lower)
             or "japanese" in tags_lower
             or "ja" in tags_lower
-        ):
+        )
+        if has_ja_keyword:
             use_cases.append("Japanese")
 
         # 3. Reasoning
@@ -280,9 +333,13 @@ class ModelNormalizer:
         # 5. Lightweight
         if size != "unknown":
             try:
-                num_size = float(size.replace("B", ""))
-                if num_size <= 9.0:
+                # P2指摘対応: 500MなどのMillion単位モデルをLightweightに含め、B単位は9B以下を対象にする
+                if "M" in size:
                     use_cases.append("Lightweight")
+                else:
+                    num_size = float(size.replace("B", ""))
+                    if num_size <= 9.0:
+                        use_cases.append("Lightweight")
             except ValueError:
                 pass
 

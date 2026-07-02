@@ -36,7 +36,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage, met
   };
 
   return (
-    <aside style={styles.sidebar} className={isOpen ? 'active' : ''}>
+    <aside style={styles.sidebar} className={`app-sidebar ${isOpen ? 'active' : ''}`}>
       {/* Mobile Close Button */}
       <button onClick={onClose} className="mobile-close-btn" aria-label="Close sidebar">
         <X size={20} />
