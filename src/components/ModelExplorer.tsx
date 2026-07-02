@@ -116,7 +116,7 @@ export const ModelExplorer: React.FC<ModelExplorerProps> = ({ models, onSelectMo
       {/* Control Panel (Search, Filter, Sort) */}
       <div style={styles.controlPanel} className="glass-panel">
         {/* Search */}
-        <div style={styles.searchRow}>
+        <div className="explorer-search-row">
           <div style={styles.searchWrapper}>
             <Search size={18} style={styles.searchIcon} />
             <input
@@ -320,13 +320,7 @@ const styles = {
     gap: '16px',
     marginBottom: '20px',
   },
-  searchRow: {
-    display: 'flex',
-    gap: '16px',
-    '@media (max-width: 768px)': {
-      flexDirection: 'column' as const,
-    }
-  },
+
   searchWrapper: {
     flex: 1,
     position: 'relative' as const,

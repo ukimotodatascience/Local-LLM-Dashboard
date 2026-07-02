@@ -302,3 +302,18 @@ input, select, button {
     gap: 24px;
   }
 }
+
+/* Model Explorer Search Row (P2 address) */
+.explorer-search-row {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .explorer-search-row {
+    flex-direction: column;
+  }
+  .explorer-search-row > div {
+    width: 100% !important;
+  }
+}
