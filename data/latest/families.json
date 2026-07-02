@@ -1,0 +1,65 @@
+[
+  {
+    "family": "Qwen",
+    "model_count": 97,
+    "new_model_count": 97,
+    "rising_model_count": 6,
+    "total_downloads": 285509360,
+    "total_likes": 53193,
+    "avg_radar_score": 62.6
+  },
+  {
+    "family": "Other",
+    "model_count": 91,
+    "new_model_count": 91,
+    "rising_model_count": 1,
+    "total_downloads": 1143662235,
+    "total_likes": 79819,
+    "avg_radar_score": 54.1
+  },
+  {
+    "family": "Gemma",
+    "model_count": 65,
+    "new_model_count": 65,
+    "rising_model_count": 23,
+    "total_downloads": 103962614,
+    "total_likes": 27123,
+    "avg_radar_score": 67.5
+  },
+  {
+    "family": "Llama",
+    "model_count": 53,
+    "new_model_count": 53,
+    "rising_model_count": 0,
+    "total_downloads": 57384577,
+    "total_likes": 44130,
+    "avg_radar_score": 57.1
+  },
+  {
+    "family": "DeepSeek",
+    "model_count": 35,
+    "new_model_count": 35,
+    "rising_model_count": 0,
+    "total_downloads": 39802952,
+    "total_likes": 39983,
+    "avg_radar_score": 53.7
+  },
+  {
+    "family": "Phi",
+    "model_count": 31,
+    "new_model_count": 31,
+    "rising_model_count": 0,
+    "total_downloads": 15070423,
+    "total_likes": 15874,
+    "avg_radar_score": 47.2
+  },
+  {
+    "family": "Mistral",
+    "model_count": 30,
+    "new_model_count": 30,
+    "rising_model_count": 1,
+    "total_downloads": 15496289,
+    "total_likes": 24407,
+    "avg_radar_score": 59.4
+  }
+]

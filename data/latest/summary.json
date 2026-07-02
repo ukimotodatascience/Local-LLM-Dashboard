@@ -1,0 +1,773 @@
+{
+  "total_models": 402,
+  "total_downloads": 1660888450,
+  "total_likes": 284529,
+  "top_rising_models": [
+    {
+      "id": "unsloth/gemma-4-26B-A4B-it-GGUF",
+      "display_name": "gemma 4 26B A4B it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "26B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 1482262,
+      "likes": 928,
+      "last_modified": "2026-06-09T14:49:06.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-26B-A4B-it",
+        "base_model:quantized:google/gemma-4-26B-A4B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "imatrix",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.8,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "display_name": "gemma 4 12B coder fable5 composer2.5 v1 GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it:free"
+      },
+      "author": "yuxinlu1",
+      "model_family": "Gemma",
+      "model_size": "12B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 614069,
+      "likes": 2559,
+      "last_modified": "2026-06-19T03:52:11.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "Reasoning",
+        "General",
+        "Coding"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "coding",
+        "code",
+        "reasoning",
+        "thinking",
+        "llama.cpp",
+        "local-llm",
+        "text-generation",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.6,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-12b-it-GGUF",
+      "display_name": "gemma 4 12b it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "12B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 1443180,
+      "likes": 717,
+      "last_modified": "2026-06-09T15:32:24.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "gemma4_unified",
+        "image-text-to-text",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.5,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+      "display_name": "gemma 4 26B A4B it qat GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "26B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 876003,
+      "likes": 240,
+      "last_modified": "2026-06-10T11:44:18.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "gemma4",
+        "image-text-to-text",
+        "unsloth",
+        "gemma",
+        "google",
+        "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+        "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 82.9,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-31B-it-GGUF",
+      "display_name": "gemma 4 31B it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-31b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "31B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 622296,
+      "likes": 507,
+      "last_modified": "2026-06-09T14:49:01.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000012",
+        "completion": "0.00000035"
+      },
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-31B-it",
+        "base_model:quantized:google/gemma-4-31B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "imatrix",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 82.8,
+      "is_new": true,
+      "is_rising": true
+    }
+  ],
+  "top_new_models": [
+    {
+      "id": "unsloth/gemma-4-26B-A4B-it-GGUF",
+      "display_name": "gemma 4 26B A4B it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "26B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 1482262,
+      "likes": 928,
+      "last_modified": "2026-06-09T14:49:06.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-26B-A4B-it",
+        "base_model:quantized:google/gemma-4-26B-A4B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "imatrix",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.8,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "display_name": "gemma 4 12B coder fable5 composer2.5 v1 GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it:free"
+      },
+      "author": "yuxinlu1",
+      "model_family": "Gemma",
+      "model_size": "12B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 614069,
+      "likes": 2559,
+      "last_modified": "2026-06-19T03:52:11.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "Reasoning",
+        "General",
+        "Coding"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "coding",
+        "code",
+        "reasoning",
+        "thinking",
+        "llama.cpp",
+        "local-llm",
+        "text-generation",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.6,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-12b-it-GGUF",
+      "display_name": "gemma 4 12b it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "12B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 1443180,
+      "likes": 717,
+      "last_modified": "2026-06-09T15:32:24.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "gemma4_unified",
+        "image-text-to-text",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.5,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+      "display_name": "gemma 4 26B A4B it qat GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "26B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 876003,
+      "likes": 240,
+      "last_modified": "2026-06-10T11:44:18.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "gemma4",
+        "image-text-to-text",
+        "unsloth",
+        "gemma",
+        "google",
+        "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+        "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 82.9,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-31B-it-GGUF",
+      "display_name": "gemma 4 31B it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-31b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "31B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 622296,
+      "likes": 507,
+      "last_modified": "2026-06-09T14:49:01.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000012",
+        "completion": "0.00000035"
+      },
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-31B-it",
+        "base_model:quantized:google/gemma-4-31B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "imatrix",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 82.8,
+      "is_new": true,
+      "is_rising": true
+    }
+  ],
+  "top_radar_models": [
+    {
+      "id": "unsloth/gemma-4-26B-A4B-it-GGUF",
+      "display_name": "gemma 4 26B A4B it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "26B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 1482262,
+      "likes": 928,
+      "last_modified": "2026-06-09T14:49:06.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-26B-A4B-it",
+        "base_model:quantized:google/gemma-4-26B-A4B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "imatrix",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.8,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "display_name": "gemma 4 12B coder fable5 composer2.5 v1 GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it:free"
+      },
+      "author": "yuxinlu1",
+      "model_family": "Gemma",
+      "model_size": "12B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 614069,
+      "likes": 2559,
+      "last_modified": "2026-06-19T03:52:11.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "Reasoning",
+        "General",
+        "Coding"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "coding",
+        "code",
+        "reasoning",
+        "thinking",
+        "llama.cpp",
+        "local-llm",
+        "text-generation",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.6,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-12b-it-GGUF",
+      "display_name": "gemma 4 12b it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-12b-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "12B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 1443180,
+      "likes": 717,
+      "last_modified": "2026-06-09T15:32:24.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "gemma4_unified",
+        "image-text-to-text",
+        "base_model:google/gemma-4-12B-it",
+        "base_model:quantized:google/gemma-4-12B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 84.5,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+      "display_name": "gemma 4 26B A4B it qat GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-26B-A4B-it-qat-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-26b-a4b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "26B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 876003,
+      "likes": 240,
+      "last_modified": "2026-06-10T11:44:18.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
+      },
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference — delivering near-31B quality at...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "gemma4",
+        "image-text-to-text",
+        "unsloth",
+        "gemma",
+        "google",
+        "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+        "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 82.9,
+      "is_new": true,
+      "is_rising": true
+    },
+    {
+      "id": "unsloth/gemma-4-31B-it-GGUF",
+      "display_name": "gemma 4 31B it GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF",
+        "ollama": "https://ollama.com/library/gemma",
+        "openrouter": "https://openrouter.ai/models/google/gemma-4-31b-it"
+      },
+      "author": "unsloth",
+      "model_family": "Gemma",
+      "model_size": "31B",
+      "quantization": "GGUF",
+      "license": "apache-2.0",
+      "downloads": 622296,
+      "likes": 507,
+      "last_modified": "2026-06-09T14:49:01.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T14:06:26.208537Z",
+      "has_gguf": true,
+      "has_ollama": true,
+      "context_length": 262144,
+      "pricing": {
+        "prompt": "0.00000012",
+        "completion": "0.00000035"
+      },
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+      "use_cases": [
+        "General"
+      ],
+      "tags": [
+        "gguf",
+        "gemma4",
+        "unsloth",
+        "gemma",
+        "google",
+        "image-text-to-text",
+        "base_model:google/gemma-4-31B-it",
+        "base_model:quantized:google/gemma-4-31B-it",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us",
+        "imatrix",
+        "conversational"
+      ],
+      "collected_at": "2026-07-02T14:06:26.208537Z",
+      "radar_score": 82.8,
+      "is_new": true,
+      "is_rising": true
+    }
+  ]
+}
