@@ -53,10 +53,9 @@ class ModelNormalizer:
             if prev_model:
                 prev_dl = prev_model.get("downloads", 0)
                 prev_likes = prev_model.get("likes", 0)
-                dl_growth = (downloads - prev_dl) / prev_dl if prev_dl > 0 else 0.0
-                likes_growth = (
-                    (hf["likes"] - prev_likes) / prev_likes if prev_likes > 0 else 0.0
-                )
+                # P2指摘対応: 過去のダウンロード・ライク数が0だったモデルの上昇ブレイクアウト対応
+                dl_growth = (downloads - prev_dl) / max(1, prev_dl)
+                likes_growth = (hf["likes"] - prev_likes) / max(1, prev_likes)
                 growth_rate = max(dl_growth, likes_growth)
 
             # メタデータ構築
@@ -213,24 +212,8 @@ class ModelNormalizer:
         for ol in sorted_ol_models:
             ol_name = ol["model_name"]
 
-            # P1指摘対応: 世代トークンの厳密な一致確認 (qwen3に対するqwen2.5、gemma3に対するgemma2等の誤マッチ防止)
-            gen_match = re.search(r"(\d+(?:\.\d+)?|r\d+)", ol_name)
-            if gen_match:
-                gen_token = gen_match.group(1)
-                if gen_token == "3" and (
-                    "3.1" in model_id_lower or "3.2" in model_id_lower
-                ):
-                    continue
-                if gen_token == "2" and ("2.5" in model_id_lower):
-                    continue
-                # モデルIDに世代トークンが含まれているか境界チェック
-                if not re.search(
-                    r"(?:^|[^a-zA-Z])" + re.escape(gen_token) + r"(?:[^a-zA-Z]|$)",
-                    model_id_lower,
-                ):
-                    continue
-
             # 1. カタログモデル名がモデルIDに含まれるか (例: "llama3.2" in "meta-llama/Llama-3.2-3B")
+            # P2指摘対応: "qwen2.5" のように密着する世代を含む直接マッチ時は世代境界チェックをバイパスする
             if ol_name in model_id_lower:
                 if size != "unknown":
                     ol_sizes = [s.upper() for s in ol.get("sizes", [])]
@@ -239,23 +222,36 @@ class ModelNormalizer:
                 else:
                     return True, ol["ollama_url"]
 
-            # 2. ファミリーとサイズが正確に合致し、かつモデルIDにファミリー名が含まれる場合
+            # 2. ファミリーとサイズが正確に合致し、かつモデルIDにファミリー名が含まれる場合 (フォールバック判定)
             if ol["family"] == family and size != "unknown":
                 ol_sizes = [s.upper() for s in ol.get("sizes", [])]
                 if size in ol_sizes:
                     if family.lower() in model_id_lower:
-                        # ファミリー一致時のフォールバックでも世代トークンの整合性をチェック
+                        # P2指摘対応: カタログ名固有のワード（例: codegemma なら code）がある場合、それがモデルIDにも含まれることを要求
+                        ol_prefix = ol_name.replace(family.lower(), "").strip("-")
+                        if ol_prefix and ol_prefix not in model_id_lower:
+                            continue
+
+                        # フォールバック時のみ世代トークンの整合性をチェック
+                        gen_match = re.search(r"(\d+(?:\.\d+)?|r\d+)", ol_name)
                         if gen_match:
                             gen_token = gen_match.group(1)
-                            if re.search(
+                            if gen_token == "3" and (
+                                "3.1" in model_id_lower or "3.2" in model_id_lower
+                            ):
+                                continue
+                            if gen_token == "2" and ("2.5" in model_id_lower):
+                                continue
+                            # 世代トークンが独立した境界で含まれているか
+                            if not re.search(
                                 r"(?:^|[^a-zA-Z])"
                                 + re.escape(gen_token)
                                 + r"(?:[^a-zA-Z]|$)",
                                 model_id_lower,
                             ):
-                                return True, ol["ollama_url"]
-                        else:
-                            return True, ol["ollama_url"]
+                                continue
+
+                        return True, ol["ollama_url"]
 
         return False, None
 
@@ -291,28 +287,32 @@ class ModelNormalizer:
                         if is_vl_hf != is_vl_or:
                             continue
 
-                        # P1指摘対応: 世代バージョンの厳格な整合性確認 (gemma-4とgemma-3、qwen3.5とqwen3等の誤マッチ防止)
-                        versions = ["2.5", "3.1", "3.2", "1.5", "3", "4", "2", "1"]
-                        hf_versions = [
-                            v
-                            for v in versions
-                            if re.search(
-                                r"(?:^|[^a-zA-Z])" + re.escape(v) + r"(?:[^a-zA-Z]|$)",
-                                model_id_lower,
-                            )
+                        # P2指摘対応: 公式ベースモデルがサードパーティの微調整モデル(例: aion-rp)に誤マップされるのを防止
+                        official_orgs = [
+                            "meta-llama",
+                            "google",
+                            "qwen",
+                            "deepseek-ai",
+                            "mistralai",
+                            "microsoft",
                         ]
-                        or_versions = [
-                            v
-                            for v in versions
-                            if re.search(
-                                r"(?:^|[^a-zA-Z])" + re.escape(v) + r"(?:[^a-zA-Z]|$)",
-                                or_id,
-                            )
-                        ]
-                        if hf_versions and or_versions:
-                            best_hf_v = sorted(hf_versions, key=len, reverse=True)[0]
-                            best_or_v = sorted(or_versions, key=len, reverse=True)[0]
-                            if best_hf_v != best_or_v:
+                        hf_author = (
+                            model_id_lower.split("/")[0]
+                            if "/" in model_id_lower
+                            else ""
+                        )
+                        if hf_author in official_orgs:
+                            or_author = or_id.split("/")[0] if "/" in or_id else ""
+                            if or_author != hf_author:
+                                continue
+
+                        # P2指摘対応: ファミリープレフィックス付きの世代バージョンの整合性確認 (例: gemma-4 と gemma-3, qwen2.5 と qwen3)
+                        hf_gen_match = re.search(
+                            rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower
+                        )
+                        or_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", or_id)
+                        if hf_gen_match and or_gen_match:
+                            if hf_gen_match.group(1) != or_gen_match.group(1):
                                 continue
 
                         # 指導データかどうかの整合性も考慮

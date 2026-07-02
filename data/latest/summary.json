@@ -1,7 +1,7 @@
 {
-  "total_models": 186,
-  "total_downloads": 321452053,
-  "total_likes": 145091,
+  "total_models": 171,
+  "total_downloads": 303684520,
+  "total_likes": 145073,
   "top_rising_models": [],
   "top_new_models": [
     {
@@ -22,16 +22,16 @@
       "likes": 2561,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
+        "Reasoning",
         "Coding",
-        "Reasoning"
+        "General"
       ],
       "tags": [
         "gguf",
@@ -51,7 +51,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
+      "collected_at": "2026-07-02T16:09:10.755451Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -63,7 +63,7 @@
       "sources": {
         "huggingface": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
         "ollama": null,
-        "openrouter": "https://openrouter.ai/models/google/gemma-3-12b-it"
+        "openrouter": null
       },
       "author": "yuxinlu1",
       "model_family": "Gemma",
@@ -71,21 +71,18 @@
       "quantization": "GGUF",
       "license": "apache-2.0",
       "downloads": 314374,
-      "likes": 943,
+      "likes": 945,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
-      "context_length": 131072,
-      "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.00000015"
-      },
-      "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
+      "context_length": null,
+      "pricing": null,
+      "description": null,
       "use_cases": [
-        "General",
-        "Reasoning"
+        "Reasoning",
+        "General"
       ],
       "tags": [
         "gguf",
@@ -106,9 +103,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
-      "radar_score": 62.8,
+      "growth_rate": 0.0021208907741251328,
+      "collected_at": "2026-07-02T16:09:10.755451Z",
+      "radar_score": 62.9,
       "is_new": true,
       "is_rising": false
     },
@@ -130,7 +127,7 @@
       "likes": 640,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -149,8 +146,51 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
+      "collected_at": "2026-07-02T16:09:10.755451Z",
       "radar_score": 62.1,
+      "is_new": true,
+      "is_rising": false
+    },
+    {
+      "id": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "display_name": "Ornith 1.0 9B GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
+        "ollama": null,
+        "openrouter": null
+      },
+      "author": "deepreinforce-ai",
+      "model_family": "Other",
+      "model_size": "9B",
+      "quantization": "GGUF",
+      "license": "mit",
+      "downloads": 255123,
+      "likes": 389,
+      "last_modified": "2026-06-25T14:12:12.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
+      "has_gguf": true,
+      "has_ollama": false,
+      "context_length": null,
+      "pricing": null,
+      "description": null,
+      "use_cases": [
+        "Lightweight",
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "text-generation",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "growth_rate": 0.00516795865633075,
+      "collected_at": "2026-07-02T16:09:10.755451Z",
+      "radar_score": 61.8,
       "is_new": true,
       "is_rising": false
     },
@@ -172,17 +212,17 @@
       "likes": 317,
       "last_modified": "2026-06-24T14:30:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
-        "Coding",
         "Reasoning",
-        "Japanese"
+        "Coding",
+        "Japanese",
+        "General"
       ],
       "tags": [
         "transformers",
@@ -214,50 +254,7 @@
         "region:us"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
-      "radar_score": 61.4,
-      "is_new": true,
-      "is_rising": false
-    },
-    {
-      "id": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "display_name": "Ornith 1.0 9B GGUF",
-      "source": "huggingface",
-      "sources": {
-        "huggingface": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
-        "ollama": null,
-        "openrouter": null
-      },
-      "author": "deepreinforce-ai",
-      "model_family": "Other",
-      "model_size": "9B",
-      "quantization": "GGUF",
-      "license": "mit",
-      "downloads": 255123,
-      "likes": 387,
-      "last_modified": "2026-06-25T14:12:12.000Z",
-      "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
-      "has_gguf": true,
-      "has_ollama": false,
-      "context_length": null,
-      "pricing": null,
-      "description": null,
-      "use_cases": [
-        "General",
-        "Lightweight"
-      ],
-      "tags": [
-        "transformers",
-        "gguf",
-        "text-generation",
-        "license:mit",
-        "endpoints_compatible",
-        "region:us",
-        "conversational"
-      ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
+      "collected_at": "2026-07-02T16:09:10.755451Z",
       "radar_score": 61.4,
       "is_new": true,
       "is_rising": false
@@ -282,16 +279,16 @@
       "likes": 2561,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
+        "Reasoning",
         "Coding",
-        "Reasoning"
+        "General"
       ],
       "tags": [
         "gguf",
@@ -311,7 +308,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
+      "collected_at": "2026-07-02T16:09:10.755451Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -323,7 +320,7 @@
       "sources": {
         "huggingface": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
         "ollama": null,
-        "openrouter": "https://openrouter.ai/models/google/gemma-3-12b-it"
+        "openrouter": null
       },
       "author": "yuxinlu1",
       "model_family": "Gemma",
@@ -331,21 +328,18 @@
       "quantization": "GGUF",
       "license": "apache-2.0",
       "downloads": 314374,
-      "likes": 943,
+      "likes": 945,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
-      "context_length": 131072,
-      "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.00000015"
-      },
-      "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
+      "context_length": null,
+      "pricing": null,
+      "description": null,
       "use_cases": [
-        "General",
-        "Reasoning"
+        "Reasoning",
+        "General"
       ],
       "tags": [
         "gguf",
@@ -366,9 +360,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
-      "radar_score": 62.8,
+      "growth_rate": 0.0021208907741251328,
+      "collected_at": "2026-07-02T16:09:10.755451Z",
+      "radar_score": 62.9,
       "is_new": true,
       "is_rising": false
     },
@@ -390,7 +384,7 @@
       "likes": 640,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -409,8 +403,51 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
+      "collected_at": "2026-07-02T16:09:10.755451Z",
       "radar_score": 62.1,
+      "is_new": true,
+      "is_rising": false
+    },
+    {
+      "id": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "display_name": "Ornith 1.0 9B GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
+        "ollama": null,
+        "openrouter": null
+      },
+      "author": "deepreinforce-ai",
+      "model_family": "Other",
+      "model_size": "9B",
+      "quantization": "GGUF",
+      "license": "mit",
+      "downloads": 255123,
+      "likes": 389,
+      "last_modified": "2026-06-25T14:12:12.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
+      "has_gguf": true,
+      "has_ollama": false,
+      "context_length": null,
+      "pricing": null,
+      "description": null,
+      "use_cases": [
+        "Lightweight",
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "text-generation",
+        "license:mit",
+        "endpoints_compatible",
+        "region:us",
+        "conversational"
+      ],
+      "growth_rate": 0.00516795865633075,
+      "collected_at": "2026-07-02T16:09:10.755451Z",
+      "radar_score": 61.8,
       "is_new": true,
       "is_rising": false
     },
@@ -432,17 +469,17 @@
       "likes": 317,
       "last_modified": "2026-06-24T14:30:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
+      "last_seen_at": "2026-07-02T16:09:10.755451Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
-        "Coding",
         "Reasoning",
-        "Japanese"
+        "Coding",
+        "Japanese",
+        "General"
       ],
       "tags": [
         "transformers",
@@ -474,50 +511,7 @@
         "region:us"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
-      "radar_score": 61.4,
-      "is_new": true,
-      "is_rising": false
-    },
-    {
-      "id": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "display_name": "Ornith 1.0 9B GGUF",
-      "source": "huggingface",
-      "sources": {
-        "huggingface": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
-        "ollama": null,
-        "openrouter": null
-      },
-      "author": "deepreinforce-ai",
-      "model_family": "Other",
-      "model_size": "9B",
-      "quantization": "GGUF",
-      "license": "mit",
-      "downloads": 255123,
-      "likes": 387,
-      "last_modified": "2026-06-25T14:12:12.000Z",
-      "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T15:46:11.220078Z",
-      "has_gguf": true,
-      "has_ollama": false,
-      "context_length": null,
-      "pricing": null,
-      "description": null,
-      "use_cases": [
-        "General",
-        "Lightweight"
-      ],
-      "tags": [
-        "transformers",
-        "gguf",
-        "text-generation",
-        "license:mit",
-        "endpoints_compatible",
-        "region:us",
-        "conversational"
-      ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-02T15:46:11.220078Z",
+      "collected_at": "2026-07-02T16:09:10.755451Z",
       "radar_score": 61.4,
       "is_new": true,
       "is_rising": false

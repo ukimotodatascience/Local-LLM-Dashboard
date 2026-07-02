@@ -44,12 +44,27 @@ class HuggingFaceCollector:
                         if not model_id:
                             continue
 
+                        # P2指摘対応: テスト用ダミーモデル・フィクスチャモデルの早期除外
+                        id_lower = model_id.lower()
+                        test_kws = [
+                            "tiny-random",
+                            "internal-testing",
+                            "dummy-",
+                            "test-fixture",
+                            "tiny-qwen",
+                            "tiny-llama",
+                            "tiny-gemma",
+                            "tiny-deepseek",
+                        ]
+                        if any(kw in id_lower for kw in test_kws):
+                            continue
+
                         # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み等) の早期除外
                         pipeline_tag = model.get("pipeline_tag")
                         tags = model.get("tags") or []
                         has_gguf = (
                             "gguf" in tags
-                            or "gguf" in model_id.lower()
+                            or "gguf" in id_lower
                             or any("gguf" in str(t).lower() for t in tags)
                         )
 

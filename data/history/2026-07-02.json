@@ -17,16 +17,16 @@
     "likes": 2561,
     "last_modified": "2026-06-19T03:52:11.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
+      "Reasoning",
       "Coding",
-      "Reasoning"
+      "General"
     ],
     "tags": [
       "gguf",
@@ -46,7 +46,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 65.1,
     "is_new": true,
     "is_rising": false
@@ -58,7 +58,7 @@
     "sources": {
       "huggingface": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
       "ollama": null,
-      "openrouter": "https://openrouter.ai/models/google/gemma-3-12b-it"
+      "openrouter": null
     },
     "author": "yuxinlu1",
     "model_family": "Gemma",
@@ -66,21 +66,18 @@
     "quantization": "GGUF",
     "license": "apache-2.0",
     "downloads": 314374,
-    "likes": 943,
+    "likes": 945,
     "last_modified": "2026-06-19T09:31:48.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
-    "context_length": 131072,
-    "pricing": {
-      "prompt": "0.00000005",
-      "completion": "0.00000015"
-    },
-    "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
+    "context_length": null,
+    "pricing": null,
+    "description": null,
     "use_cases": [
-      "General",
-      "Reasoning"
+      "Reasoning",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -101,9 +98,9 @@
       "region:us",
       "conversational"
     ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 62.8,
+    "growth_rate": 0.0021208907741251328,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 62.9,
     "is_new": true,
     "is_rising": false
   },
@@ -125,7 +122,7 @@
     "likes": 640,
     "last_modified": "2026-06-25T14:31:04.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -144,8 +141,51 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 62.1,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
+    "display_name": "Ornith 1.0 9B GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
+      "ollama": null,
+      "openrouter": null
+    },
+    "author": "deepreinforce-ai",
+    "model_family": "Other",
+    "model_size": "9B",
+    "quantization": "GGUF",
+    "license": "mit",
+    "downloads": 255123,
+    "likes": 389,
+    "last_modified": "2026-06-25T14:12:12.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.208537Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": true,
+    "has_ollama": false,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "gguf",
+      "text-generation",
+      "license:mit",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.00516795865633075,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 61.8,
     "is_new": true,
     "is_rising": false
   },
@@ -167,17 +207,17 @@
     "likes": 317,
     "last_modified": "2026-06-24T14:30:11.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding",
       "Reasoning",
-      "Japanese"
+      "Coding",
+      "Japanese",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -209,50 +249,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 61.4,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "deepreinforce-ai/Ornith-1.0-9B-GGUF",
-    "display_name": "Ornith 1.0 9B GGUF",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B-GGUF",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "deepreinforce-ai",
-    "model_family": "Other",
-    "model_size": "9B",
-    "quantization": "GGUF",
-    "license": "mit",
-    "downloads": 255123,
-    "likes": 387,
-    "last_modified": "2026-06-25T14:12:12.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": true,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "gguf",
-      "text-generation",
-      "license:mit",
-      "endpoints_compatible",
-      "region:us",
-      "conversational"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 61.4,
     "is_new": true,
     "is_rising": false
@@ -275,7 +272,7 @@
     "likes": 131,
     "last_modified": "2026-06-25T05:51:07.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 262144,
@@ -307,7 +304,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 59.9,
     "is_new": true,
     "is_rising": false
@@ -330,7 +327,7 @@
     "likes": 21,
     "last_modified": "2026-06-04T15:24:51.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -349,7 +346,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 59.5,
     "is_new": true,
     "is_rising": false
@@ -372,7 +369,7 @@
     "likes": 9,
     "last_modified": "2026-06-05T15:08:44.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -391,7 +388,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 58.9,
     "is_new": true,
     "is_rising": false
@@ -414,7 +411,7 @@
     "likes": 292,
     "last_modified": "2026-05-31T11:28:43.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -450,7 +447,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 58.5,
     "is_new": true,
     "is_rising": false
@@ -473,7 +470,7 @@
     "likes": 492,
     "last_modified": "2026-06-23T15:18:23.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -499,7 +496,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 58.0,
     "is_new": true,
     "is_rising": false
@@ -522,7 +519,7 @@
     "likes": 10,
     "last_modified": "2026-06-05T15:14:07.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -541,7 +538,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 57.5,
     "is_new": true,
     "is_rising": false
@@ -564,7 +561,7 @@
     "likes": 76,
     "last_modified": "2026-06-04T15:42:24.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -582,7 +579,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 57.2,
     "is_new": true,
     "is_rising": false
@@ -605,7 +602,7 @@
     "likes": 37,
     "last_modified": "2026-06-10T03:49:06.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -623,7 +620,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 57.0,
     "is_new": true,
     "is_rising": false
@@ -646,7 +643,7 @@
     "likes": 83,
     "last_modified": "2026-06-06T23:43:01.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -685,7 +682,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 56.7,
     "is_new": true,
     "is_rising": false
@@ -708,7 +705,7 @@
     "likes": 5,
     "last_modified": "2026-06-05T15:10:10.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -727,7 +724,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 56.6,
     "is_new": true,
     "is_rising": false
@@ -750,7 +747,7 @@
     "likes": 414,
     "last_modified": "2026-06-12T21:32:12.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": 262144,
@@ -783,7 +780,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 56.4,
     "is_new": true,
     "is_rising": false
@@ -806,7 +803,7 @@
     "likes": 5130,
     "last_modified": "2026-06-22T12:12:50.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -830,7 +827,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 55.7,
     "is_new": true,
     "is_rising": false
@@ -853,7 +850,7 @@
     "likes": 1674,
     "last_modified": "2026-06-22T12:12:13.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -877,8 +874,8 @@
       "deploy:azure",
       "region:us"
     ],
-    "growth_rate": 0.0005977286312014345,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 54.5,
     "is_new": true,
     "is_rising": false
@@ -901,7 +898,7 @@
     "likes": 366,
     "last_modified": "2024-12-01T04:12:27.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": 131072,
@@ -911,8 +908,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -938,7 +935,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 53.8,
     "is_new": true,
     "is_rising": false
@@ -961,7 +958,7 @@
     "likes": 169,
     "last_modified": "2024-10-08T14:00:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": 131072,
@@ -971,8 +968,8 @@
     },
     "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -997,7 +994,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 53.7,
     "is_new": true,
     "is_rising": false
@@ -1020,7 +1017,7 @@
     "likes": 26,
     "last_modified": "2026-06-30T03:17:40.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -1040,7 +1037,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 53.5,
     "is_new": true,
     "is_rising": false
@@ -1063,7 +1060,7 @@
     "likes": 6,
     "last_modified": "2026-05-28T19:13:24.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -1071,8 +1068,8 @@
     "description": null,
     "use_cases": [
       "General",
-      "Vision",
-      "Lightweight"
+      "Lightweight",
+      "Vision"
     ],
     "tags": [
       "transformers",
@@ -1090,7 +1087,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 53.3,
     "is_new": true,
     "is_rising": false
@@ -1113,15 +1110,15 @@
     "likes": 507,
     "last_modified": "2023-12-11T22:23:10.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1137,7 +1134,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 53.2,
     "is_new": true,
     "is_rising": false
@@ -1160,7 +1157,7 @@
     "likes": 220,
     "last_modified": "2024-10-08T14:01:10.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": 131072,
@@ -1170,8 +1167,8 @@
     },
     "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -1196,8 +1193,158 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 53.0,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-Coder-32B-Instruct-GGUF",
+    "display_name": "Qwen2.5 Coder 32B Instruct GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF",
+      "ollama": "https://ollama.com/library/qwen2.5-coder",
+      "openrouter": "https://openrouter.ai/models/qwen/qwen-2.5-coder-32b-instruct"
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "32B",
+    "quantization": "GGUF",
+    "license": "apache-2.0",
+    "downloads": 210937,
+    "likes": 208,
+    "last_modified": "2025-01-12T02:08:48.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": true,
+    "has_ollama": true,
+    "context_length": 128000,
+    "pricing": {
+      "prompt": "0.00000066",
+      "completion": "0.000001"
+    },
+    "description": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). Qwen2.5-Coder brings the following improvements upon CodeQwen1.5: - Significantly improvements in **code generation**, **code reasoning**...",
+    "use_cases": [
+      "Coding",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "gguf",
+      "code",
+      "codeqwen",
+      "chat",
+      "qwen",
+      "qwen-coder",
+      "text-generation",
+      "en",
+      "arxiv:2409.12186",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+      "base_model:quantized:Qwen/Qwen2.5-Coder-32B-Instruct",
+      "license:apache-2.0",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 52.8,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "display_name": "Qwen2.5 1.5B Instruct GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "1.5B",
+    "quantization": "GGUF",
+    "license": "apache-2.0",
+    "downloads": 245652,
+    "likes": 123,
+    "last_modified": "2024-09-20T06:31:38.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": true,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "gguf",
+      "chat",
+      "text-generation",
+      "en",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+      "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+      "license:apache-2.0",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 52.5,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-3B-Instruct-GGUF",
+    "display_name": "Qwen2.5 3B Instruct GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "3B",
+    "quantization": "GGUF",
+    "license": "other",
+    "downloads": 223499,
+    "likes": 142,
+    "last_modified": "2024-09-20T06:34:33.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": true,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "gguf",
+      "chat",
+      "text-generation",
+      "en",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-3B-Instruct",
+      "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+      "license:other",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 52.5,
     "is_new": true,
     "is_rising": false
   },
@@ -1207,7 +1354,7 @@
     "source": "huggingface",
     "sources": {
       "huggingface": "https://huggingface.co/bartowski/gemma-2-2b-it-GGUF",
-      "ollama": "https://ollama.com/library/codegemma",
+      "ollama": "https://ollama.com/library/gemma2",
       "openrouter": null
     },
     "author": "bartowski",
@@ -1219,15 +1366,15 @@
     "likes": 100,
     "last_modified": "2024-08-05T19:14:36.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1241,7 +1388,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 52.4,
     "is_new": true,
     "is_rising": false
@@ -1264,7 +1411,7 @@
     "likes": 6205,
     "last_modified": "2024-09-25T17:00:57.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -1274,8 +1421,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1305,7 +1452,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 52.0,
     "is_new": true,
     "is_rising": false
@@ -1328,15 +1475,15 @@
     "likes": 6581,
     "last_modified": "2024-09-27T15:52:33.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1355,7 +1502,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 52.0,
     "is_new": true,
     "is_rising": false
@@ -1378,16 +1525,16 @@
     "likes": 426,
     "last_modified": "2025-06-16T00:09:18.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1406,7 +1553,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 52.0,
     "is_new": true,
     "is_rising": false
@@ -1429,15 +1576,15 @@
     "likes": 144,
     "last_modified": "2024-05-22T20:26:06.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1463,8 +1610,55 @@
       "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 52.0,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+    "display_name": "Qwen2.5 0.5B Instruct GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "0.5B",
+    "quantization": "GGUF",
+    "license": "apache-2.0",
+    "downloads": 192559,
+    "likes": 110,
+    "last_modified": "2024-09-20T06:20:24.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": true,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "gguf",
+      "chat",
+      "text-generation",
+      "en",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+      "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+      "license:apache-2.0",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 51.9,
     "is_new": true,
     "is_rising": false
   },
@@ -1486,7 +1680,7 @@
     "likes": 37,
     "last_modified": "2026-05-29T09:41:53.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -1504,7 +1698,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 51.7,
     "is_new": true,
     "is_rising": false
@@ -1527,7 +1721,7 @@
     "likes": 4663,
     "last_modified": "2025-06-18T23:49:51.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 8192,
@@ -1537,8 +1731,8 @@
     },
     "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 8B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1559,7 +1753,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 51.6,
     "is_new": true,
     "is_rising": false
@@ -1582,7 +1776,7 @@
     "likes": 44,
     "last_modified": "2025-01-14T18:09:55.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": 131072,
@@ -1592,8 +1786,8 @@
     },
     "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1620,7 +1814,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 51.3,
     "is_new": true,
     "is_rising": false
@@ -1640,18 +1834,18 @@
     "quantization": "FP16",
     "license": "apache-2.0",
     "downloads": 882465,
-    "likes": 4115,
+    "likes": 4116,
     "last_modified": "2025-07-24T16:44:02.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1668,8 +1862,8 @@
       "text-generation-inference",
       "region:us"
     ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "growth_rate": 0.00024301336573511544,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 51.3,
     "is_new": true,
     "is_rising": false
@@ -1692,15 +1886,15 @@
     "likes": 3174,
     "last_modified": "2025-07-24T16:57:21.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1719,7 +1913,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 51.2,
     "is_new": true,
     "is_rising": false
@@ -1742,15 +1936,15 @@
     "likes": 2467,
     "last_modified": "2024-10-24T15:08:03.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1778,7 +1972,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 50.9,
     "is_new": true,
     "is_rising": false
@@ -1801,7 +1995,7 @@
     "likes": 2291,
     "last_modified": "2024-10-24T15:07:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -1811,8 +2005,8 @@
     },
     "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1840,7 +2034,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 50.8,
     "is_new": true,
     "is_rising": false
@@ -1852,7 +2046,7 @@
     "sources": {
       "huggingface": "https://huggingface.co/meta-llama/Llama-3.1-8B",
       "ollama": "https://ollama.com/library/llama3.1",
-      "openrouter": "https://openrouter.ai/models/aion-labs/aion-rp-llama-3.1-8b"
+      "openrouter": null
     },
     "author": "meta-llama",
     "model_family": "Llama",
@@ -1863,18 +2057,15 @@
     "likes": 2296,
     "last_modified": "2024-10-16T22:00:37.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
-    "context_length": 32768,
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000016"
-    },
-    "description": "Aion-RP-Llama-3.1-8B ranks the highest in the character evaluation portion of the RPBench-Auto benchmark, a roleplaying-specific variant of Arena-Hard-Auto, where LLMs evaluate each other’s responses. It is a fine-tuned base model...",
+    "context_length": null,
+    "pricing": null,
+    "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -1901,7 +2092,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 50.8,
     "is_new": true,
     "is_rising": false
@@ -1924,7 +2115,7 @@
     "likes": 2864,
     "last_modified": "2024-12-21T18:28:01.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -1964,8 +2155,64 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 50.6,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-7B-Instruct",
+    "display_name": "Qwen2.5 7B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": "https://openrouter.ai/models/qwen/qwen-2.5-7b-instruct"
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "7B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 12878382,
+    "likes": 1393,
+    "last_modified": "2025-01-12T02:10:10.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.208537Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": 131072,
+    "pricing": {
+      "prompt": "0.00000004",
+      "completion": "0.0000001"
+    },
+    "description": "Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...",
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-7B",
+      "base_model:finetune:Qwen/Qwen2.5-7B",
+      "license:apache-2.0",
+      "eval-results",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 50.3,
     "is_new": true,
     "is_rising": false
   },
@@ -1987,7 +2234,7 @@
     "likes": 1504,
     "last_modified": "2024-10-24T15:07:51.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -1997,8 +2244,8 @@
     },
     "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2027,7 +2274,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 50.3,
     "is_new": true,
     "is_rising": false
@@ -2050,7 +2297,7 @@
     "likes": 49,
     "last_modified": "2024-09-25T16:14:40.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": 131072,
@@ -2060,8 +2307,8 @@
     },
     "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -2088,7 +2335,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 50.0,
     "is_new": true,
     "is_rising": false
@@ -2111,16 +2358,16 @@
     "likes": 1079,
     "last_modified": "2025-05-29T13:13:34.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2135,7 +2382,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 50.0,
     "is_new": true,
     "is_rising": false
@@ -2158,15 +2405,15 @@
     "likes": 1573,
     "last_modified": "2025-02-24T03:31:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Reasoning"
+      "Reasoning",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2181,7 +2428,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 50.0,
     "is_new": true,
     "is_rising": false
@@ -2204,7 +2451,7 @@
     "likes": 927,
     "last_modified": "2024-12-15T01:55:33.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -2244,8 +2491,117 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 49.8,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "display_name": "Qwen2.5 1.5B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "1.5B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 11447651,
+    "likes": 754,
+    "last_modified": "2024-09-25T12:32:50.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.208537Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-1.5B",
+      "base_model:finetune:Qwen/Qwen2.5-1.5B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 49.6,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+    "display_name": "Qwen2.5 Coder 7B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5-coder",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "7B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 1969774,
+    "likes": 744,
+    "last_modified": "2025-01-12T02:03:41.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Coding",
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "code",
+      "codeqwen",
+      "chat",
+      "qwen",
+      "qwen-coder",
+      "conversational",
+      "en",
+      "arxiv:2409.12186",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-Coder-7B",
+      "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
+    "radar_score": 49.5,
     "is_new": true,
     "is_rising": false
   },
@@ -2267,16 +2623,16 @@
     "likes": 1529,
     "last_modified": "2025-02-24T03:32:35.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2291,8 +2647,110 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 49.5,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "display_name": "Qwen2.5 0.5B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "0.5B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 5099815,
+    "likes": 546,
+    "last_modified": "2024-09-25T12:32:56.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.208537Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-0.5B",
+      "base_model:finetune:Qwen/Qwen2.5-0.5B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 49.2,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-3B-Instruct",
+    "display_name": "Qwen2.5 3B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "3B",
+    "quantization": "FP16",
+    "license": "other",
+    "downloads": 7331162,
+    "likes": 517,
+    "last_modified": "2024-09-25T12:33:00.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.208537Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-3B",
+      "base_model:finetune:Qwen/Qwen2.5-3B",
+      "license:other",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 49.1,
     "is_new": true,
     "is_rising": false
   },
@@ -2314,15 +2772,15 @@
     "likes": 13426,
     "last_modified": "2025-03-27T04:01:59.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Reasoning"
+      "Reasoning",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2340,7 +2798,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 49.0,
     "is_new": true,
     "is_rising": false
@@ -2363,15 +2821,15 @@
     "likes": 846,
     "last_modified": "2024-10-24T15:07:40.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2399,8 +2857,159 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 49.0,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-0.5B",
+    "display_name": "Qwen2.5 0.5B",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "0.5B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 2257587,
+    "likes": 427,
+    "last_modified": "2024-09-25T12:32:36.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "conversational",
+      "en",
+      "arxiv:2407.10671",
+      "license:apache-2.0",
+      "eval-results",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 48.9,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-32B-Instruct",
+    "display_name": "Qwen2.5 32B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "32B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 3013651,
+    "likes": 354,
+    "last_modified": "2024-09-25T12:33:09.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-32B",
+      "base_model:finetune:Qwen/Qwen2.5-32B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 48.7,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-14B-Instruct",
+    "display_name": "Qwen2.5 14B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "14B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 2115434,
+    "likes": 351,
+    "last_modified": "2024-09-25T12:33:04.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-14B",
+      "base_model:finetune:Qwen/Qwen2.5-14B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 48.7,
     "is_new": true,
     "is_rising": false
   },
@@ -2422,7 +3031,7 @@
     "likes": 54,
     "last_modified": "2026-06-15T01:14:07.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -2450,7 +3059,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 48.7,
     "is_new": true,
     "is_rising": false
@@ -2462,7 +3071,7 @@
     "sources": {
       "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
       "ollama": "https://ollama.com/library/deepseek-r1",
-      "openrouter": "https://openrouter.ai/models/deepseek/deepseek-r1-distill-llama-70b"
+      "openrouter": null
     },
     "author": "deepseek-ai",
     "model_family": "DeepSeek",
@@ -2473,18 +3082,15 @@
     "likes": 782,
     "last_modified": "2025-02-24T03:31:15.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
-    "context_length": 128000,
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000008"
-    },
-    "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across...",
+    "context_length": null,
+    "pricing": null,
+    "description": null,
     "use_cases": [
-      "General",
-      "Reasoning"
+      "Reasoning",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2499,7 +3105,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 48.2,
     "is_new": true,
     "is_rising": false
@@ -2522,15 +3128,15 @@
     "likes": 1839,
     "last_modified": "2025-07-24T16:44:46.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2550,8 +3156,65 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 48.2,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-Coder-14B-Instruct",
+    "display_name": "Qwen2.5 Coder 14B Instruct",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": null
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "14B",
+    "quantization": "FP16",
+    "license": "apache-2.0",
+    "downloads": 3914092,
+    "likes": 171,
+    "last_modified": "2025-01-12T02:02:59.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Coding",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "code",
+      "codeqwen",
+      "chat",
+      "qwen",
+      "qwen-coder",
+      "conversational",
+      "en",
+      "arxiv:2409.12186",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-Coder-14B",
+      "base_model:finetune:Qwen/Qwen2.5-Coder-14B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 47.9,
     "is_new": true,
     "is_rising": false
   },
@@ -2573,7 +3236,7 @@
     "likes": 724,
     "last_modified": "2025-12-19T01:39:27.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -2597,7 +3260,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 47.8,
     "is_new": true,
     "is_rising": false
@@ -2620,16 +3283,16 @@
     "likes": 852,
     "last_modified": "2025-02-24T03:32:20.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2644,7 +3307,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 47.8,
     "is_new": true,
     "is_rising": false
@@ -2667,7 +3330,7 @@
     "likes": 3132,
     "last_modified": "2025-03-27T04:01:53.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
@@ -2692,7 +3355,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 47.7,
     "is_new": true,
     "is_rising": false
@@ -2715,16 +3378,16 @@
     "likes": 870,
     "last_modified": "2025-02-24T03:32:07.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2739,7 +3402,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 47.6,
     "is_new": true,
     "is_rising": false
@@ -2762,7 +3425,7 @@
     "likes": 312,
     "last_modified": "2025-07-31T15:52:41.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 131072,
@@ -2790,7 +3453,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 47.5,
     "is_new": true,
     "is_rising": false
@@ -2813,15 +3476,15 @@
     "likes": 2454,
     "last_modified": "2025-05-29T11:37:44.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Reasoning"
+      "Reasoning",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2839,7 +3502,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 47.4,
     "is_new": true,
     "is_rising": false
@@ -2862,7 +3525,7 @@
     "likes": 67,
     "last_modified": "2026-06-14T03:23:30.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -2890,7 +3553,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 47.4,
     "is_new": true,
     "is_rising": false
@@ -2913,16 +3576,16 @@
     "likes": 91,
     "last_modified": "2026-02-18T10:06:23.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -2940,7 +3603,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 47.2,
     "is_new": true,
     "is_rising": false
@@ -2963,7 +3626,7 @@
     "likes": 773,
     "last_modified": "2026-01-30T06:29:38.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 160000,
@@ -2973,8 +3636,8 @@
     },
     "description": "Qwen3-Coder-30B-A3B-Instruct is a 30.5B parameter Mixture-of-Experts (MoE) model with 128 experts (8 active per forward pass), designed for advanced code generation, repository-scale understanding, and agentic tool use. Built on the...",
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -2993,7 +3656,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 47.1,
     "is_new": true,
     "is_rising": false
@@ -3016,7 +3679,7 @@
     "likes": 465,
     "last_modified": "2024-09-08T07:39:55.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 32768,
@@ -3026,8 +3689,8 @@
     },
     "description": "Aion-RP-Llama-3.1-8B ranks the highest in the character evaluation portion of the RPBench-Auto benchmark, a roleplaying-specific variant of Arena-Hard-Auto, where LLMs evaluate each other’s responses. It is a fine-tuned base model...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -3058,8 +3721,202 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 47.0,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "lmstudio-community/Qwen3.6-27B-GGUF",
+    "display_name": "Qwen3.6 27B GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/lmstudio-community/Qwen3.6-27B-GGUF",
+      "ollama": null,
+      "openrouter": null
+    },
+    "author": "lmstudio-community",
+    "model_family": "Qwen",
+    "model_size": "27B",
+    "quantization": "GGUF",
+    "license": "apache-2.0",
+    "downloads": 323528,
+    "likes": 30,
+    "last_modified": "2026-04-22T14:31:59.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.208537Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": true,
+    "has_ollama": false,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "gguf",
+      "base_model:Qwen/Qwen3.6-27B",
+      "base_model:quantized:Qwen/Qwen3.6-27B",
+      "license:apache-2.0",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.034482758620689655,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 46.8,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.2",
+    "display_name": "DeepSeek V3.2",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
+      "ollama": "https://ollama.com/library/deepseek-v3",
+      "openrouter": null
+    },
+    "author": "deepseek-ai",
+    "model_family": "DeepSeek",
+    "model_size": "unknown",
+    "quantization": "FP16",
+    "license": "mit",
+    "downloads": 2230017,
+    "likes": 1453,
+    "last_modified": "2025-12-01T11:04:59.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "deepseek_v32",
+      "text-generation",
+      "conversational",
+      "base_model:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+      "base_model:finetune:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+      "license:mit",
+      "eval-results",
+      "endpoints_compatible",
+      "fp8",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
+    "radar_score": 46.8,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+    "display_name": "Qwen2.5 7B Instruct AWQ",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "ollama": "https://ollama.com/library/qwen2.5",
+      "openrouter": "https://openrouter.ai/models/qwen/qwen-2.5-7b-instruct"
+    },
+    "author": "Qwen",
+    "model_family": "Qwen",
+    "model_size": "7B",
+    "quantization": "AWQ",
+    "license": "apache-2.0",
+    "downloads": 3518070,
+    "likes": 47,
+    "last_modified": "2024-10-09T12:26:45.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": 131072,
+    "pricing": {
+      "prompt": "0.00000004",
+      "completion": "0.0000001"
+    },
+    "description": "Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...",
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "chat",
+      "conversational",
+      "en",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-7B-Instruct",
+      "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "4-bit",
+      "awq",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 46.4,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "IlyaGusev/saiga_llama3_8b",
+    "display_name": "saiga llama3 8b",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/IlyaGusev/saiga_llama3_8b",
+      "ollama": "https://ollama.com/library/llama3",
+      "openrouter": null
+    },
+    "author": "IlyaGusev",
+    "model_family": "Llama",
+    "model_size": "8B",
+    "quantization": "FP16",
+    "license": "other",
+    "downloads": 392244,
+    "likes": 141,
+    "last_modified": "2024-07-04T07:34:28.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "Lightweight",
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "llama",
+      "text-generation",
+      "conversational",
+      "ru",
+      "dataset:IlyaGusev/saiga_scored",
+      "doi:10.57967/hf/2368",
+      "license:other",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
+    "radar_score": 46.0,
     "is_new": true,
     "is_rising": false
   },
@@ -3081,7 +3938,7 @@
     "likes": 228,
     "last_modified": "2026-04-09T01:27:17.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 262144,
@@ -3106,7 +3963,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 45.9,
     "is_new": true,
     "is_rising": false
@@ -3129,16 +3986,16 @@
     "likes": 11,
     "last_modified": "2025-05-29T20:47:08.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -3158,7 +4015,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 45.9,
     "is_new": true,
     "is_rising": false
@@ -3181,7 +4038,7 @@
     "likes": 22,
     "last_modified": "2025-03-25T18:31:44.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
@@ -3204,7 +4061,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 45.9,
     "is_new": true,
     "is_rising": false
@@ -3227,15 +4084,15 @@
     "likes": 112,
     "last_modified": "2025-05-21T06:32:23.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -3250,7 +4107,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 45.8,
     "is_new": true,
     "is_rising": false
@@ -3273,7 +4130,7 @@
     "likes": 275,
     "last_modified": "2025-08-25T02:27:41.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -3296,7 +4153,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 45.7,
     "is_new": true,
     "is_rising": false
@@ -3319,7 +4176,7 @@
     "likes": 97,
     "last_modified": "2025-02-15T10:24:46.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -3329,8 +4186,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -3351,7 +4208,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 45.4,
     "is_new": true,
     "is_rising": false
@@ -3374,7 +4231,7 @@
     "likes": 109,
     "last_modified": "2024-08-07T07:16:54.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -3412,61 +4269,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 45.4,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-Coder-32B-Instruct-GGUF",
-    "display_name": "Qwen2.5 Coder 32B Instruct GGUF",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "32B",
-    "quantization": "GGUF",
-    "license": "apache-2.0",
-    "downloads": 210937,
-    "likes": 208,
-    "last_modified": "2025-01-12T02:08:48.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": true,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Coding"
-    ],
-    "tags": [
-      "transformers",
-      "gguf",
-      "code",
-      "codeqwen",
-      "chat",
-      "qwen",
-      "qwen-coder",
-      "text-generation",
-      "en",
-      "arxiv:2409.12186",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
-      "base_model:quantized:Qwen/Qwen2.5-Coder-32B-Instruct",
-      "license:apache-2.0",
-      "endpoints_compatible",
-      "region:us",
-      "conversational"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 45.3,
     "is_new": true,
     "is_rising": false
   },
@@ -3488,15 +4292,15 @@
     "likes": 231,
     "last_modified": "2023-12-31T21:29:33.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -3513,7 +4317,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 45.3,
     "is_new": true,
     "is_rising": false
@@ -3536,7 +4340,7 @@
     "likes": 44,
     "last_modified": "2024-10-09T18:57:39.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -3546,8 +4350,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -3574,101 +4378,54 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 45.2,
     "is_new": true,
     "is_rising": false
   },
   {
-    "id": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
-    "display_name": "Qwen2.5 1.5B Instruct GGUF",
+    "id": "deepseek-ai/DeepSeek-V3",
+    "display_name": "DeepSeek V3",
     "source": "huggingface",
     "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF",
-      "ollama": null,
+      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "ollama": "https://ollama.com/library/deepseek-v3",
       "openrouter": null
     },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "1.5B",
-    "quantization": "GGUF",
-    "license": "apache-2.0",
-    "downloads": 245652,
-    "likes": 123,
-    "last_modified": "2024-09-20T06:31:38.000Z",
+    "author": "deepseek-ai",
+    "model_family": "DeepSeek",
+    "model_size": "unknown",
+    "quantization": "FP16",
+    "license": "unknown",
+    "downloads": 1113089,
+    "likes": 4092,
+    "last_modified": "2025-03-27T04:01:45.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": true,
-    "has_ollama": false,
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "General"
     ],
     "tags": [
-      "gguf",
-      "chat",
+      "transformers",
+      "safetensors",
+      "deepseek_v3",
       "text-generation",
-      "en",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-1.5B-Instruct",
-      "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
-      "license:apache-2.0",
+      "conversational",
+      "custom_code",
+      "arxiv:2412.19437",
+      "eval-results",
+      "text-generation-inference",
       "endpoints_compatible",
-      "region:us",
-      "conversational"
+      "fp8",
+      "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 45.0,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-3B-Instruct-GGUF",
-    "display_name": "Qwen2.5 3B Instruct GGUF",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "3B",
-    "quantization": "GGUF",
-    "license": "other",
-    "downloads": 223499,
-    "likes": 142,
-    "last_modified": "2024-09-20T06:34:33.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": true,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "gguf",
-      "chat",
-      "text-generation",
-      "en",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-3B-Instruct",
-      "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
-      "license:other",
-      "endpoints_compatible",
-      "region:us",
-      "conversational"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 45.0,
     "is_new": true,
     "is_rising": false
@@ -3691,15 +4448,15 @@
     "likes": 46,
     "last_modified": "2026-03-02T13:38:43.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -3711,7 +4468,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 44.7,
     "is_new": true,
     "is_rising": false
@@ -3734,7 +4491,7 @@
     "likes": 46,
     "last_modified": "2024-12-06T19:24:27.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -3771,55 +4528,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 44.6,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
-    "display_name": "Qwen2.5 0.5B Instruct GGUF",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "0.5B",
-    "quantization": "GGUF",
-    "license": "apache-2.0",
-    "downloads": 192559,
-    "likes": 110,
-    "last_modified": "2024-09-20T06:20:24.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": true,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "gguf",
-      "chat",
-      "text-generation",
-      "en",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-0.5B-Instruct",
-      "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
-      "license:apache-2.0",
-      "endpoints_compatible",
-      "region:us",
-      "conversational"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 44.4,
     "is_new": true,
     "is_rising": false
   },
@@ -3841,7 +4551,7 @@
     "likes": 41,
     "last_modified": "2024-07-24T09:21:20.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -3851,8 +4561,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -3880,7 +4590,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 44.4,
     "is_new": true,
     "is_rising": false
@@ -3903,7 +4613,7 @@
     "likes": 4755,
     "last_modified": "2025-08-26T17:25:47.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -3929,7 +4639,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 44.2,
     "is_new": true,
     "is_rising": false
@@ -3952,7 +4662,7 @@
     "likes": 4939,
     "last_modified": "2025-08-26T17:25:03.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -3978,7 +4688,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 44.2,
     "is_new": true,
     "is_rising": false
@@ -4001,15 +4711,15 @@
     "likes": 52,
     "last_modified": "2023-12-11T22:36:20.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4029,7 +4739,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 44.2,
     "is_new": true,
     "is_rising": false
@@ -4052,7 +4762,7 @@
     "likes": 53,
     "last_modified": "2024-07-22T09:55:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": true,
     "context_length": null,
@@ -4080,50 +4790,8 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 44.1,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "lmstudio-community/Qwen3.6-27B-GGUF",
-    "display_name": "Qwen3.6 27B GGUF",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/lmstudio-community/Qwen3.6-27B-GGUF",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "lmstudio-community",
-    "model_family": "Qwen",
-    "model_size": "27B",
-    "quantization": "GGUF",
-    "license": "apache-2.0",
-    "downloads": 323528,
-    "likes": 29,
-    "last_modified": "2026-04-22T14:31:59.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": true,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "gguf",
-      "base_model:Qwen/Qwen3.6-27B",
-      "base_model:quantized:Qwen/Qwen3.6-27B",
-      "license:apache-2.0",
-      "endpoints_compatible",
-      "region:us",
-      "conversational"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 43.9,
     "is_new": true,
     "is_rising": false
   },
@@ -4145,7 +4813,7 @@
     "likes": 37,
     "last_modified": "2025-08-22T05:44:45.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -4155,8 +4823,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4172,7 +4840,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.9,
     "is_new": true,
     "is_rising": false
@@ -4195,7 +4863,7 @@
     "likes": 4,
     "last_modified": "2024-10-09T18:57:13.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -4205,8 +4873,8 @@
     },
     "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "safetensors",
@@ -4230,7 +4898,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.8,
     "is_new": true,
     "is_rising": false
@@ -4253,15 +4921,15 @@
     "likes": 22,
     "last_modified": "2024-11-22T08:30:49.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4282,7 +4950,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.8,
     "is_new": true,
     "is_rising": false
@@ -4305,15 +4973,15 @@
     "likes": 4,
     "last_modified": "2025-04-28T03:43:00.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -4328,7 +4996,104 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
+    "radar_score": 43.7,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.1",
+    "display_name": "DeepSeek V3.1",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+      "ollama": "https://ollama.com/library/deepseek-v3",
+      "openrouter": null
+    },
+    "author": "deepseek-ai",
+    "model_family": "DeepSeek",
+    "model_size": "unknown",
+    "quantization": "Quantized",
+    "license": "mit",
+    "downloads": 252422,
+    "likes": 825,
+    "last_modified": "2025-09-05T11:30:15.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "deepseek_v3",
+      "text-generation",
+      "conversational",
+      "custom_code",
+      "arxiv:2412.19437",
+      "base_model:deepseek-ai/DeepSeek-V3.1-Base",
+      "base_model:quantized:deepseek-ai/DeepSeek-V3.1-Base",
+      "license:mit",
+      "eval-results",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "fp8",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
+    "radar_score": 43.7,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-V3.2-Exp",
+    "display_name": "DeepSeek V3.2 Exp",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp",
+      "ollama": "https://ollama.com/library/deepseek-v3",
+      "openrouter": null
+    },
+    "author": "deepseek-ai",
+    "model_family": "DeepSeek",
+    "model_size": "unknown",
+    "quantization": "FP16",
+    "license": "mit",
+    "downloads": 228713,
+    "likes": 989,
+    "last_modified": "2025-11-18T02:39:54.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "deepseek_v32",
+      "text-generation",
+      "conversational",
+      "base_model:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+      "base_model:finetune:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+      "license:mit",
+      "eval-results",
+      "endpoints_compatible",
+      "fp8",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.7,
     "is_new": true,
     "is_rising": false
@@ -4351,7 +5116,7 @@
     "likes": 24,
     "last_modified": "2026-04-16T15:49:24.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -4370,7 +5135,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 43.6,
     "is_new": true,
     "is_rising": false
@@ -4393,15 +5158,15 @@
     "likes": 741,
     "last_modified": "2026-03-06T14:38:33.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -4419,7 +5184,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 43.6,
     "is_new": true,
     "is_rising": false
@@ -4442,7 +5207,7 @@
     "likes": 4,
     "last_modified": "2024-10-16T19:36:24.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -4452,8 +5217,8 @@
     },
     "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "safetensors",
@@ -4478,7 +5243,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.6,
     "is_new": true,
     "is_rising": false
@@ -4501,15 +5266,15 @@
     "likes": 5,
     "last_modified": "2026-06-09T17:39:54.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.221078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "safetensors",
@@ -4536,7 +5301,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.221078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.6,
     "is_new": true,
     "is_rising": false
@@ -4559,15 +5324,15 @@
     "likes": 22,
     "last_modified": "2026-03-24T01:29:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4584,7 +5349,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 43.5,
     "is_new": true,
     "is_rising": false
@@ -4607,7 +5372,7 @@
     "likes": 50,
     "last_modified": "2025-04-30T11:12:14.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -4615,8 +5380,8 @@
     "description": null,
     "use_cases": [
       "General",
-      "Vision",
-      "Lightweight"
+      "Lightweight",
+      "Vision"
     ],
     "tags": [
       "gguf",
@@ -4628,7 +5393,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 43.5,
     "is_new": true,
     "is_rising": false
@@ -4651,16 +5416,16 @@
     "likes": 18,
     "last_modified": "2025-05-29T17:57:49.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "mlx",
@@ -4675,7 +5440,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.2,
     "is_new": true,
     "is_rising": false
@@ -4698,7 +5463,7 @@
     "likes": 13,
     "last_modified": "2025-05-09T19:32:57.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": 131072,
@@ -4708,8 +5473,8 @@
     },
     "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "safetensors",
@@ -4736,7 +5501,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.1,
     "is_new": true,
     "is_rising": false
@@ -4759,16 +5524,16 @@
     "likes": 12,
     "last_modified": "2025-05-29T17:57:56.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Reasoning",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "mlx",
@@ -4783,64 +5548,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 43.0,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-7B-Instruct",
-    "display_name": "Qwen2.5 7B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
-      "ollama": null,
-      "openrouter": "https://openrouter.ai/models/qwen/qwen-2.5-7b-instruct"
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "7B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 12878382,
-    "likes": 1393,
-    "last_modified": "2025-01-12T02:10:10.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": 131072,
-    "pricing": {
-      "prompt": "0.00000004",
-      "completion": "0.0000001"
-    },
-    "description": "Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...",
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2309.00071",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-7B",
-      "base_model:finetune:Qwen/Qwen2.5-7B",
-      "license:apache-2.0",
-      "eval-results",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 42.8,
     "is_new": true,
     "is_rising": false
   },
@@ -4862,15 +5571,15 @@
     "likes": 1377,
     "last_modified": "2025-07-26T03:46:27.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4888,7 +5597,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.7,
     "is_new": true,
     "is_rising": false
@@ -4911,15 +5620,15 @@
     "likes": 2332,
     "last_modified": "2024-04-17T08:40:16.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4938,7 +5647,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 42.7,
     "is_new": true,
     "is_rising": false
@@ -4961,7 +5670,7 @@
     "likes": 1173,
     "last_modified": "2025-07-26T03:49:13.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": 131072,
@@ -4971,8 +5680,8 @@
     },
     "description": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between \"thinking\" mode for math,...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -4992,7 +5701,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.6,
     "is_new": true,
     "is_rising": false
@@ -5015,7 +5724,7 @@
     "likes": 49,
     "last_modified": "2026-04-13T14:56:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -5034,7 +5743,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.5,
     "is_new": true,
     "is_rising": false
@@ -5057,15 +5766,15 @@
     "likes": 1041,
     "last_modified": "2025-08-14T07:35:01.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5114,7 +5823,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.4,
     "is_new": true,
     "is_rising": false
@@ -5137,15 +5846,15 @@
     "likes": 1035,
     "last_modified": "2025-04-04T13:12:40.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5190,7 +5899,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.4,
     "is_new": true,
     "is_rising": false
@@ -5213,7 +5922,7 @@
     "likes": 77,
     "last_modified": "2026-04-12T23:54:59.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -5231,7 +5940,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.4,
     "is_new": true,
     "is_rising": false
@@ -5254,7 +5963,7 @@
     "likes": 905,
     "last_modified": "2025-07-26T03:45:17.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": 131072,
@@ -5279,7 +5988,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.3,
     "is_new": true,
     "is_rising": false
@@ -5302,15 +6011,15 @@
     "likes": 890,
     "last_modified": "2025-09-17T06:56:53.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5327,59 +6036,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.2,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-1.5B-Instruct",
-    "display_name": "Qwen2.5 1.5B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "1.5B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 11447651,
-    "likes": 754,
-    "last_modified": "2024-09-25T12:32:50.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-1.5B",
-      "base_model:finetune:Qwen/Qwen2.5-1.5B",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 42.1,
     "is_new": true,
     "is_rising": false
   },
@@ -5401,7 +6059,7 @@
     "likes": 709,
     "last_modified": "2025-07-26T03:45:22.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": 131072,
@@ -5429,65 +6087,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 42.0,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
-    "display_name": "Qwen2.5 Coder 7B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "7B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 1969774,
-    "likes": 744,
-    "last_modified": "2025-01-12T02:03:41.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Coding",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "code",
-      "codeqwen",
-      "chat",
-      "qwen",
-      "qwen-coder",
-      "conversational",
-      "en",
-      "arxiv:2409.12186",
-      "arxiv:2309.00071",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-Coder-7B",
-      "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 42.0,
     "is_new": true,
     "is_rising": false
@@ -5510,15 +6110,15 @@
     "likes": 23,
     "last_modified": "2025-09-02T21:08:06.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": true,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Reasoning"
+      "Reasoning",
+      "General"
     ],
     "tags": [
       "Model Optimizer",
@@ -5539,7 +6139,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 42.0,
     "is_new": true,
     "is_rising": false
@@ -5562,15 +6162,15 @@
     "likes": 644,
     "last_modified": "2025-07-26T03:46:39.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5586,7 +6186,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 41.9,
     "is_new": true,
     "is_rising": false
@@ -5609,15 +6209,15 @@
     "likes": 4783,
     "last_modified": "2024-04-17T08:40:48.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5637,110 +6237,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 41.9,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-0.5B-Instruct",
-    "display_name": "Qwen2.5 0.5B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "0.5B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 5099815,
-    "likes": 546,
-    "last_modified": "2024-09-25T12:32:56.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-0.5B",
-      "base_model:finetune:Qwen/Qwen2.5-0.5B",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 41.7,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-3B-Instruct",
-    "display_name": "Qwen2.5 3B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "3B",
-    "quantization": "FP16",
-    "license": "other",
-    "downloads": 7331162,
-    "likes": 517,
-    "last_modified": "2024-09-25T12:33:00.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-3B",
-      "base_model:finetune:Qwen/Qwen2.5-3B",
-      "license:other",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 41.6,
     "is_new": true,
     "is_rising": false
   },
@@ -5762,15 +6260,15 @@
     "likes": 495,
     "last_modified": "2025-07-26T03:46:32.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5788,7 +6286,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 41.6,
     "is_new": true,
     "is_rising": false
@@ -5811,7 +6309,7 @@
     "likes": 521,
     "last_modified": "2026-05-08T03:33:34.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -5837,7 +6335,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 41.6,
     "is_new": true,
     "is_rising": false
@@ -5860,15 +6358,15 @@
     "likes": 601,
     "last_modified": "2025-08-14T07:35:07.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -5923,7 +6421,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 41.6,
     "is_new": true,
     "is_rising": false
@@ -5946,7 +6444,7 @@
     "likes": 417,
     "last_modified": "2025-07-26T03:49:23.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": 131702,
@@ -5974,56 +6472,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 41.4,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-0.5B",
-    "display_name": "Qwen2.5 0.5B",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-0.5B",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "0.5B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 2257587,
-    "likes": 427,
-    "last_modified": "2024-09-25T12:32:36.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "conversational",
-      "en",
-      "arxiv:2407.10671",
-      "license:apache-2.0",
-      "eval-results",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 41.4,
     "is_new": true,
     "is_rising": false
@@ -6035,7 +6484,7 @@
     "sources": {
       "huggingface": "https://huggingface.co/MaziyarPanahi/Mistral-Small-24B-Instruct-2501-GGUF",
       "ollama": null,
-      "openrouter": "https://openrouter.ai/models/mistralai/mistral-small-24b-instruct-2501"
+      "openrouter": "https://openrouter.ai/models/mistralai/mistral-small-3.2-24b-instruct"
     },
     "author": "MaziyarPanahi",
     "model_family": "Mistral",
@@ -6046,15 +6495,15 @@
     "likes": 12,
     "last_modified": "2025-06-23T09:27:53.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
-    "context_length": 32768,
+    "context_length": 128000,
     "pricing": {
-      "prompt": "0.00000005",
-      "completion": "0.00000008"
+      "prompt": "0.000000075",
+      "completion": "0.0000002"
     },
-    "description": "Mistral Small 3 is a 24B-parameter language model optimized for low-latency performance across common AI tasks. Released under the Apache 2.0 license, it features both pre-trained and instruction-tuned versions designed...",
+    "description": "Mistral-Small-3.2-24B-Instruct-2506 is an updated 24B parameter model from Mistral optimized for instruction following, repetition reduction, and improved function calling. Compared to the 3.1 release, version 3.2 significantly improves accuracy on...",
     "use_cases": [
       "General"
     ],
@@ -6077,7 +6526,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 41.4,
     "is_new": true,
     "is_rising": false
@@ -6100,7 +6549,7 @@
     "likes": 4,
     "last_modified": "2024-09-22T14:56:28.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -6126,109 +6575,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 41.2,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-32B-Instruct",
-    "display_name": "Qwen2.5 32B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-32B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "32B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 3013651,
-    "likes": 354,
-    "last_modified": "2024-09-25T12:33:09.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2309.00071",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-32B",
-      "base_model:finetune:Qwen/Qwen2.5-32B",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 41.2,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-14B-Instruct",
-    "display_name": "Qwen2.5 14B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "14B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 2115434,
-    "likes": 351,
-    "last_modified": "2024-09-25T12:33:04.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2309.00071",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-14B",
-      "base_model:finetune:Qwen/Qwen2.5-14B",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 41.2,
     "is_new": true,
     "is_rising": false
@@ -6251,15 +6598,15 @@
     "likes": 267,
     "last_modified": "2023-09-15T13:10:03.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -6277,7 +6624,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 40.9,
     "is_new": true,
     "is_rising": false
@@ -6300,15 +6647,15 @@
     "likes": 595,
     "last_modified": "2025-12-10T20:22:37.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.221078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -6322,65 +6669,8 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.221078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 40.9,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-Coder-14B-Instruct",
-    "display_name": "Qwen2.5 Coder 14B Instruct",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "14B",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 3914092,
-    "likes": 171,
-    "last_modified": "2025-01-12T02:02:59.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "Coding"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "code",
-      "codeqwen",
-      "chat",
-      "qwen",
-      "qwen-coder",
-      "conversational",
-      "en",
-      "arxiv:2409.12186",
-      "arxiv:2309.00071",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-Coder-14B",
-      "base_model:finetune:Qwen/Qwen2.5-Coder-14B",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 40.4,
     "is_new": true,
     "is_rising": false
   },
@@ -6402,15 +6692,15 @@
     "likes": 162,
     "last_modified": "2024-06-06T14:36:57.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -6428,7 +6718,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 40.3,
     "is_new": true,
     "is_rising": false
@@ -6451,7 +6741,7 @@
     "likes": 3325,
     "last_modified": "2024-02-19T10:57:45.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -6481,7 +6771,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 40.2,
     "is_new": true,
     "is_rising": false
@@ -6504,16 +6794,16 @@
     "likes": 501,
     "last_modified": "2024-02-02T03:02:26.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Coding",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -6529,8 +6819,57 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 40.0,
+    "is_new": true,
+    "is_rising": false
+  },
+  {
+    "id": "QuantTrio/DeepSeek-V3.2-AWQ",
+    "display_name": "DeepSeek V3.2 AWQ",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/QuantTrio/DeepSeek-V3.2-AWQ",
+      "ollama": "https://ollama.com/library/deepseek-v3",
+      "openrouter": null
+    },
+    "author": "QuantTrio",
+    "model_family": "DeepSeek",
+    "model_size": "unknown",
+    "quantization": "AWQ",
+    "license": "mit",
+    "downloads": 445220,
+    "likes": 11,
+    "last_modified": "2025-12-03T13:02:03.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
+    "has_gguf": false,
+    "has_ollama": true,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "deepseek_v32",
+      "text-generation",
+      "vLLM",
+      "AWQ",
+      "conversational",
+      "base_model:deepseek-ai/DeepSeek-V3.2",
+      "base_model:quantized:deepseek-ai/DeepSeek-V3.2",
+      "license:mit",
+      "endpoints_compatible",
+      "4-bit",
+      "awq",
+      "region:us"
+    ],
+    "growth_rate": 0.0,
+    "collected_at": "2026-07-02T16:09:10.755954Z",
+    "radar_score": 39.9,
     "is_new": true,
     "is_rising": false
   },
@@ -6552,7 +6891,7 @@
     "likes": 107,
     "last_modified": "2026-05-11T15:58:52.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": 262144,
@@ -6584,7 +6923,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.8,
     "is_new": true,
     "is_rising": false
@@ -6607,15 +6946,15 @@
     "likes": 3473,
     "last_modified": "2025-12-08T11:35:44.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -6632,7 +6971,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.8,
     "is_new": true,
     "is_rising": false
@@ -6655,15 +6994,15 @@
     "likes": 13,
     "last_modified": "2025-04-28T21:05:51.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -6683,7 +7022,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 39.6,
     "is_new": true,
     "is_rising": false
@@ -6706,15 +7045,15 @@
     "likes": 2264,
     "last_modified": "2025-11-24T16:57:37.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -6736,7 +7075,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.5,
     "is_new": true,
     "is_rising": false
@@ -6759,7 +7098,7 @@
     "likes": 11,
     "last_modified": "2025-04-28T22:13:48.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 131702,
@@ -6789,7 +7128,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 39.4,
     "is_new": true,
     "is_rising": false
@@ -6812,7 +7151,7 @@
     "likes": 65,
     "last_modified": "2025-09-08T05:56:56.000Z",
     "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -6845,7 +7184,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 39.3,
     "is_new": true,
     "is_rising": false
@@ -6868,7 +7207,7 @@
     "likes": 10,
     "last_modified": "2025-04-28T21:32:00.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 131072,
@@ -6878,8 +7217,8 @@
     },
     "description": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between \"thinking\" mode for math,...",
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -6899,54 +7238,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 39.3,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.2",
-    "display_name": "DeepSeek V3.2",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "deepseek-ai",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "mit",
-    "downloads": 2230017,
-    "likes": 1453,
-    "last_modified": "2025-12-01T11:04:59.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v32",
-      "text-generation",
-      "conversational",
-      "base_model:deepseek-ai/DeepSeek-V3.2-Exp-Base",
-      "base_model:finetune:deepseek-ai/DeepSeek-V3.2-Exp-Base",
-      "license:mit",
-      "eval-results",
-      "endpoints_compatible",
-      "fp8",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 39.3,
     "is_new": true,
     "is_rising": false
@@ -6969,15 +7261,15 @@
     "likes": 62,
     "last_modified": "2025-07-26T03:45:47.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -6995,7 +7287,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.2,
     "is_new": true,
     "is_rising": false
@@ -7018,16 +7310,16 @@
     "likes": 157,
     "last_modified": "2024-02-05T03:38:36.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Coding",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7042,7 +7334,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.2,
     "is_new": true,
     "is_rising": false
@@ -7065,15 +7357,15 @@
     "likes": 112,
     "last_modified": "2025-03-03T00:53:59.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.221078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7098,7 +7390,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.221078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.2,
     "is_new": true,
     "is_rising": false
@@ -7121,15 +7413,15 @@
     "likes": 8,
     "last_modified": "2025-04-28T21:13:22.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -7149,7 +7441,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 39.0,
     "is_new": true,
     "is_rising": false
@@ -7161,7 +7453,7 @@
     "sources": {
       "huggingface": "https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
       "ollama": null,
-      "openrouter": "https://openrouter.ai/models/nvidia/llama-3.3-nemotron-super-49b-v1.5"
+      "openrouter": null
     },
     "author": "nvidia",
     "model_family": "Llama",
@@ -7172,15 +7464,12 @@
     "likes": 234,
     "last_modified": "2025-10-15T16:21:38.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
-    "context_length": 131072,
-    "pricing": {
-      "prompt": "0.0000004",
-      "completion": "0.0000004"
-    },
-    "description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a 49B-parameter, English-centric reasoning/chat model derived from Meta’s Llama-3.3-70B-Instruct with a 128K context. It’s post-trained for agentic workflows (RAG, tool calling) via SFT across math, code, science, and...",
+    "context_length": null,
+    "pricing": null,
+    "description": null,
     "use_cases": [
       "General"
     ],
@@ -7202,7 +7491,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 39.0,
     "is_new": true,
     "is_rising": false
@@ -7225,15 +7514,15 @@
     "likes": 7,
     "last_modified": "2025-04-28T21:28:16.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -7253,7 +7542,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 38.9,
     "is_new": true,
     "is_rising": false
@@ -7276,7 +7565,7 @@
     "likes": 13,
     "last_modified": "2026-05-07T03:01:37.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -7291,63 +7580,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 38.9,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "Qwen/Qwen2.5-7B-Instruct-AWQ",
-    "display_name": "Qwen2.5 7B Instruct AWQ",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ",
-      "ollama": null,
-      "openrouter": "https://openrouter.ai/models/qwen/qwen-2.5-7b-instruct"
-    },
-    "author": "Qwen",
-    "model_family": "Qwen",
-    "model_size": "7B",
-    "quantization": "AWQ",
-    "license": "apache-2.0",
-    "downloads": 3518070,
-    "likes": 47,
-    "last_modified": "2024-10-09T12:26:45.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": 131072,
-    "pricing": {
-      "prompt": "0.00000004",
-      "completion": "0.0000001"
-    },
-    "description": "Qwen2.5 7B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...",
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "chat",
-      "conversational",
-      "en",
-      "arxiv:2309.00071",
-      "arxiv:2407.10671",
-      "base_model:Qwen/Qwen2.5-7B-Instruct",
-      "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "4-bit",
-      "awq",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 38.9,
     "is_new": true,
     "is_rising": false
@@ -7370,15 +7603,15 @@
     "likes": 995,
     "last_modified": "2025-12-10T20:22:56.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7400,7 +7633,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 38.9,
     "is_new": true,
     "is_rising": false
@@ -7423,15 +7656,15 @@
     "likes": 82,
     "last_modified": "2024-09-15T07:35:15.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.221078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7448,7 +7681,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.221078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 38.8,
     "is_new": true,
     "is_rising": false
@@ -7471,7 +7704,7 @@
     "likes": 5,
     "last_modified": "2025-04-29T19:59:26.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 131072,
@@ -7500,59 +7733,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 38.5,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "IlyaGusev/saiga_llama3_8b",
-    "display_name": "saiga llama3 8b",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/IlyaGusev/saiga_llama3_8b",
-      "ollama": null,
-      "openrouter": "https://openrouter.ai/models/aion-labs/aion-rp-llama-3.1-8b"
-    },
-    "author": "IlyaGusev",
-    "model_family": "Llama",
-    "model_size": "8B",
-    "quantization": "FP16",
-    "license": "other",
-    "downloads": 392244,
-    "likes": 141,
-    "last_modified": "2024-07-04T07:34:28.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": 32768,
-    "pricing": {
-      "prompt": "0.0000008",
-      "completion": "0.0000016"
-    },
-    "description": "Aion-RP-Llama-3.1-8B ranks the highest in the character evaluation portion of the RPBench-Auto benchmark, a roleplaying-specific variant of Arena-Hard-Auto, where LLMs evaluate each other’s responses. It is a fine-tuned base model...",
-    "use_cases": [
-      "General",
-      "Lightweight"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "conversational",
-      "ru",
-      "dataset:IlyaGusev/saiga_scored",
-      "doi:10.57967/hf/2368",
-      "license:other",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "deploy:azure",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 38.5,
     "is_new": true,
     "is_rising": false
@@ -7575,15 +7756,15 @@
     "likes": 618,
     "last_modified": "2024-07-03T05:16:11.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7600,7 +7781,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 38.3,
     "is_new": true,
     "is_rising": false
@@ -7623,15 +7804,15 @@
     "likes": 1437,
     "last_modified": "2025-12-10T20:22:18.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7651,51 +7832,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 38.3,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "optimum-intel-internal-testing/phi-3.5-moe-tiny-random",
-    "display_name": "phi 3.5 moe tiny random",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/optimum-intel-internal-testing/phi-3.5-moe-tiny-random",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "optimum-intel-internal-testing",
-    "model_family": "Phi",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 64611,
-    "likes": 0,
-    "last_modified": "2026-06-16T15:50:53.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.221078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General",
-      "MoE"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "phimoe",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.221078Z",
-    "radar_score": 38.1,
     "is_new": true,
     "is_rising": false
   },
@@ -7717,7 +7855,7 @@
     "likes": 2,
     "last_modified": "2025-04-29T08:25:46.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": 131072,
@@ -7746,7 +7884,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 37.8,
     "is_new": true,
     "is_rising": false
@@ -7769,15 +7907,15 @@
     "likes": 3,
     "last_modified": "2025-08-27T09:48:57.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "gguf",
@@ -7797,54 +7935,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 37.5,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3",
-    "display_name": "DeepSeek V3",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "deepseek-ai",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 1113089,
-    "likes": 4092,
-    "last_modified": "2025-03-27T04:01:45.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "arxiv:2412.19437",
-      "eval-results",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "fp8",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 37.5,
     "is_new": true,
     "is_rising": false
@@ -7867,16 +7958,16 @@
     "likes": 785,
     "last_modified": "2025-12-10T20:24:40.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Coding",
-      "Japanese"
+      "Japanese",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -7919,7 +8010,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 37.5,
     "is_new": true,
     "is_rising": false
@@ -7942,16 +8033,16 @@
     "likes": 1699,
     "last_modified": "2025-12-10T20:21:52.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
+      "Coding",
       "General",
-      "RAG",
-      "Coding"
+      "RAG"
     ],
     "tags": [
       "transformers",
@@ -7970,7 +8061,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 37.0,
     "is_new": true,
     "is_rising": false
@@ -7993,7 +8084,7 @@
     "likes": 31,
     "last_modified": "2024-08-20T20:24:18.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -8021,7 +8112,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 36.8,
     "is_new": true,
     "is_rising": false
@@ -8044,15 +8135,15 @@
     "likes": 156,
     "last_modified": "2026-02-03T14:13:28.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755451Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -8067,7 +8158,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755451Z",
     "radar_score": 36.8,
     "is_new": true,
     "is_rising": false
@@ -8090,7 +8181,7 @@
     "likes": 141,
     "last_modified": "2024-06-25T08:36:27.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -8113,7 +8204,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 36.6,
     "is_new": true,
     "is_rising": false
@@ -8136,17 +8227,17 @@
     "likes": 970,
     "last_modified": "2025-12-10T20:23:49.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
+      "Coding",
       "General",
-      "RAG",
       "Vision",
-      "Coding"
+      "RAG"
     ],
     "tags": [
       "transformers",
@@ -8163,105 +8254,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 36.4,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.1",
-    "display_name": "DeepSeek V3.1",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "deepseek-ai",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "Quantized",
-    "license": "mit",
-    "downloads": 252422,
-    "likes": 825,
-    "last_modified": "2025-09-05T11:30:15.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "conversational",
-      "custom_code",
-      "arxiv:2412.19437",
-      "base_model:deepseek-ai/DeepSeek-V3.1-Base",
-      "base_model:quantized:deepseek-ai/DeepSeek-V3.1-Base",
-      "license:mit",
-      "eval-results",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "fp8",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 36.2,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "deepseek-ai/DeepSeek-V3.2-Exp",
-    "display_name": "DeepSeek V3.2 Exp",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "deepseek-ai",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "mit",
-    "downloads": 228713,
-    "likes": 989,
-    "last_modified": "2025-11-18T02:39:54.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v32",
-      "text-generation",
-      "conversational",
-      "base_model:deepseek-ai/DeepSeek-V3.2-Exp-Base",
-      "base_model:finetune:deepseek-ai/DeepSeek-V3.2-Exp-Base",
-      "license:mit",
-      "eval-results",
-      "endpoints_compatible",
-      "fp8",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 36.2,
     "is_new": true,
     "is_rising": false
   },
@@ -8272,7 +8266,7 @@
     "sources": {
       "huggingface": "https://huggingface.co/stelterlab/Mistral-Small-24B-Instruct-2501-AWQ",
       "ollama": null,
-      "openrouter": "https://openrouter.ai/models/mistralai/mistral-small-24b-instruct-2501"
+      "openrouter": "https://openrouter.ai/models/mistralai/mistral-small-3.2-24b-instruct"
     },
     "author": "stelterlab",
     "model_family": "Mistral",
@@ -8283,18 +8277,18 @@
     "likes": 29,
     "last_modified": "2025-03-30T19:38:57.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
-    "context_length": 32768,
+    "context_length": 128000,
     "pricing": {
-      "prompt": "0.00000005",
-      "completion": "0.00000008"
+      "prompt": "0.000000075",
+      "completion": "0.0000002"
     },
-    "description": "Mistral Small 3 is a 24B-parameter language model optimized for low-latency performance across common AI tasks. Released under the Apache 2.0 license, it features both pre-trained and instruction-tuned versions designed...",
+    "description": "Mistral-Small-3.2-24B-Instruct-2506 is an updated 24B parameter model from Mistral optimized for instruction following, repetition reduction, and improved function calling. Compared to the 3.1 release, version 3.2 significantly improves accuracy on...",
     "use_cases": [
-      "General",
-      "Japanese"
+      "Japanese",
+      "General"
     ],
     "tags": [
       "vllm",
@@ -8322,7 +8316,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 36.0,
     "is_new": true,
     "is_rising": false
@@ -8345,7 +8339,7 @@
     "likes": 180,
     "last_modified": "2024-06-25T08:37:17.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -8368,7 +8362,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 35.6,
     "is_new": true,
     "is_rising": false
@@ -8391,7 +8385,7 @@
     "likes": 41,
     "last_modified": "2025-02-28T15:56:14.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -8411,7 +8405,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 35.6,
     "is_new": true,
     "is_rising": false
@@ -8434,7 +8428,7 @@
     "likes": 12,
     "last_modified": "2025-03-01T10:59:15.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -8461,7 +8455,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 35.0,
     "is_new": true,
     "is_rising": false
@@ -8484,7 +8478,7 @@
     "likes": 38,
     "last_modified": "2025-12-10T18:21:11.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -8509,7 +8503,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 34.9,
     "is_new": true,
     "is_rising": false
@@ -8532,15 +8526,15 @@
     "likes": 574,
     "last_modified": "2025-12-10T20:23:23.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Coding",
+      "General",
       "MoE"
     ],
     "tags": [
@@ -8560,7 +8554,7 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 34.9,
     "is_new": true,
     "is_rising": false
@@ -8583,7 +8577,7 @@
     "likes": 8,
     "last_modified": "2025-01-08T19:32:08.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": true,
     "has_ollama": false,
     "context_length": null,
@@ -8610,7 +8604,7 @@
       "conversational"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 34.4,
     "is_new": true,
     "is_rising": false
@@ -8633,16 +8627,16 @@
     "likes": 19,
     "last_modified": "2023-11-13T12:58:45.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
       "Coding",
-      "Lightweight"
+      "Lightweight",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -8659,233 +8653,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 33.7,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-Phi3ForCausalLM-3",
-    "display_name": "tiny Phi3ForCausalLM 3",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-Phi3ForCausalLM-3",
-      "ollama": "https://ollama.com/library/phi3",
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Phi",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 218394,
-    "likes": 0,
-    "last_modified": "2026-04-14T19:47:32.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": true,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "phi3",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 32.8,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-Phi3ForCausalLM-3.5",
-    "display_name": "tiny Phi3ForCausalLM 3.5",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-Phi3ForCausalLM-3.5",
-      "ollama": "https://ollama.com/library/phi3",
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Phi",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 217246,
-    "likes": 0,
-    "last_modified": "2026-04-14T19:47:36.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": true,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "phi3",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 32.8,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-MistralForCausalLM-0.2",
-    "display_name": "tiny MistralForCausalLM 0.2",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-MistralForCausalLM-0.2",
-      "ollama": "https://ollama.com/library/mistral",
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Mistral",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 210312,
-    "likes": 0,
-    "last_modified": "2025-12-19T19:10:40.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": true,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "mistral",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 32.7,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-MistralForCausalLM-0.1",
-    "display_name": "tiny MistralForCausalLM 0.1",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-MistralForCausalLM-0.1",
-      "ollama": "https://ollama.com/library/mistral",
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Mistral",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 190929,
-    "likes": 0,
-    "last_modified": "2025-12-19T19:10:36.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": true,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "mistral",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 32.6,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "QuantTrio/DeepSeek-V3.2-AWQ",
-    "display_name": "DeepSeek V3.2 AWQ",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/QuantTrio/DeepSeek-V3.2-AWQ",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "QuantTrio",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "AWQ",
-    "license": "mit",
-    "downloads": 445220,
-    "likes": 11,
-    "last_modified": "2025-12-03T13:02:03.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v32",
-      "text-generation",
-      "vLLM",
-      "AWQ",
-      "conversational",
-      "base_model:deepseek-ai/DeepSeek-V3.2",
-      "base_model:quantized:deepseek-ai/DeepSeek-V3.2",
-      "license:mit",
-      "endpoints_compatible",
-      "4-bit",
-      "awq",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 32.4,
     "is_new": true,
     "is_rising": false
   },
@@ -8907,7 +8676,7 @@
     "likes": 37,
     "last_modified": "2025-12-10T18:20:28.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -8932,51 +8701,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 32.3,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "llamafactory/tiny-random-Llama-3",
-    "display_name": "tiny random Llama 3",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/llamafactory/tiny-random-Llama-3",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "llamafactory",
-    "model_family": "Llama",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "apache-2.0",
-    "downloads": 634767,
-    "likes": 3,
-    "last_modified": "2025-02-11T16:15:07.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "conversational",
-      "license:apache-2.0",
-      "text-generation-inference",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 31.8,
     "is_new": true,
     "is_rising": false
   },
@@ -8998,15 +8724,15 @@
     "likes": 14,
     "last_modified": "2024-07-18T19:05:40.000Z",
     "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
     "pricing": null,
     "description": null,
     "use_cases": [
-      "General",
-      "Coding"
+      "Coding",
+      "General"
     ],
     "tags": [
       "transformers",
@@ -9023,140 +8749,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 31.6,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
-    "display_name": "tiny Qwen2ForCausalLM 2.5",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Qwen",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 9115765,
-    "likes": 8,
-    "last_modified": "2025-12-19T19:10:57.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen2",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 30.5,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-random-LlamaForCausalLM",
-    "display_name": "tiny random LlamaForCausalLM",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-random-LlamaForCausalLM",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Llama",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 532416,
-    "likes": 8,
-    "last_modified": "2024-04-23T12:12:07.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "pytorch",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "arxiv:1910.09700",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 29.4,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "hmellor/tiny-random-LlamaForCausalLM",
-    "display_name": "tiny random LlamaForCausalLM",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/hmellor/tiny-random-LlamaForCausalLM",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "hmellor",
-    "model_family": "Llama",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 4928941,
-    "likes": 0,
-    "last_modified": "2025-04-29T22:01:04.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.208537Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "conversational",
-      "arxiv:1910.09700",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 28.0,
     "is_new": true,
     "is_rising": false
   },
@@ -9178,7 +8772,7 @@
     "likes": 2,
     "last_modified": "2024-04-25T06:49:29.000Z",
     "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
+    "last_seen_at": "2026-07-02T16:09:10.755954Z",
     "has_gguf": false,
     "has_ollama": false,
     "context_length": null,
@@ -9202,272 +8796,8 @@
       "region:us"
     ],
     "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
+    "collected_at": "2026-07-02T16:09:10.755954Z",
     "radar_score": 27.4,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-DeepseekV3ForCausalLM",
-    "display_name": "tiny DeepseekV3ForCausalLM",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-DeepseekV3ForCausalLM",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 247030,
-    "likes": 3,
-    "last_modified": "2025-12-19T19:09:24.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 27.1,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "hmellor/tiny-random-Gemma2ForCausalLM",
-    "display_name": "tiny random Gemma2ForCausalLM",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/hmellor/tiny-random-Gemma2ForCausalLM",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "hmellor",
-    "model_family": "Gemma",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 584697,
-    "likes": 0,
-    "last_modified": "2025-05-22T10:00:49.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "gemma2",
-      "text-generation",
-      "arxiv:1910.09700",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 27.0,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-LlamaForCausalLM-3.2",
-    "display_name": "tiny LlamaForCausalLM 3.2",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-LlamaForCausalLM-3.2",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Llama",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 292914,
-    "likes": 1,
-    "last_modified": "2025-12-19T19:10:34.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 26.6,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-DeepseekV3ForCausalLM-0528",
-    "display_name": "tiny DeepseekV3ForCausalLM 0528",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-DeepseekV3ForCausalLM-0528",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "DeepSeek",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 178488,
-    "likes": 1,
-    "last_modified": "2025-12-19T19:09:30.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "deepseek_v3",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 25.7,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "trl-internal-testing/tiny-LlamaForCausalLM-3",
-    "display_name": "tiny LlamaForCausalLM 3",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/trl-internal-testing/tiny-LlamaForCausalLM-3",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "trl-internal-testing",
-    "model_family": "Llama",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 258562,
-    "likes": 0,
-    "last_modified": "2025-12-19T19:10:20.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.209564Z",
-    "last_seen_at": "2026-07-02T15:46:11.220078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "trl",
-      "conversational",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.220078Z",
-    "radar_score": 25.6,
-    "is_new": true,
-    "is_rising": false
-  },
-  {
-    "id": "optimum-intel-internal-testing/tiny-random-Phi3ForCausalLM",
-    "display_name": "tiny random Phi3ForCausalLM",
-    "source": "huggingface",
-    "sources": {
-      "huggingface": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-Phi3ForCausalLM",
-      "ollama": null,
-      "openrouter": null
-    },
-    "author": "optimum-intel-internal-testing",
-    "model_family": "Phi",
-    "model_size": "unknown",
-    "quantization": "FP16",
-    "license": "unknown",
-    "downloads": 92461,
-    "likes": 0,
-    "last_modified": "2025-10-21T10:03:27.000Z",
-    "first_seen_at": "2026-07-02T14:06:26.210578Z",
-    "last_seen_at": "2026-07-02T15:46:11.221078Z",
-    "has_gguf": false,
-    "has_ollama": false,
-    "context_length": null,
-    "pricing": null,
-    "description": null,
-    "use_cases": [
-      "General"
-    ],
-    "tags": [
-      "transformers",
-      "onnx",
-      "safetensors",
-      "phi3",
-      "text-generation",
-      "conversational",
-      "arxiv:1910.09700",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "growth_rate": 0.0,
-    "collected_at": "2026-07-02T15:46:11.221078Z",
-    "radar_score": 23.8,
     "is_new": true,
     "is_rising": false
   }

@@ -24,8 +24,15 @@ export const ModelExplorer: React.FC<ModelExplorerProps> = ({ models, onSelectMo
   // Size filtering logic
   const parseSizeNum = (sizeStr: string): number => {
     try {
-      const match = sizeStr.match(/(\d+(?:\.\d+)?)/);
-      if (match) return parseFloat(match[1]);
+      const match = sizeStr.match(/(\d+(?:\.\d+)?)\s*([bBmM]?)/);
+      if (match) {
+        const num = parseFloat(match[1]);
+        const unit = match[2].toLowerCase();
+        if (unit === 'm') {
+          return num / 1000.0; // 500M -> 0.5B
+        }
+        return num;
+      }
     } catch {}
     return 0;
   };

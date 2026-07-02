@@ -1,39 +1,30 @@
 [
   {
     "family": "Qwen",
-    "model_count": 43,
-    "new_model_count": 43,
+    "model_count": 42,
+    "new_model_count": 42,
     "rising_model_count": 0,
-    "total_downloads": 159270793,
-    "total_likes": 15526,
-    "avg_radar_score": 42.3
+    "total_downloads": 150155028,
+    "total_likes": 15519,
+    "avg_radar_score": 45.2
   },
   {
     "family": "DeepSeek",
-    "model_count": 36,
-    "new_model_count": 36,
+    "model_count": 34,
+    "new_model_count": 34,
     "rising_model_count": 0,
-    "total_downloads": 36853791,
-    "total_likes": 42539,
-    "avg_radar_score": 43.7
+    "total_downloads": 36428273,
+    "total_likes": 42535,
+    "avg_radar_score": 45.8
   },
   {
     "family": "Llama",
-    "model_count": 35,
-    "new_model_count": 35,
+    "model_count": 30,
+    "new_model_count": 30,
     "rising_model_count": 0,
-    "total_downloads": 44963193,
-    "total_likes": 40085,
-    "avg_radar_score": 44.7
-  },
-  {
-    "family": "Phi",
-    "model_count": 23,
-    "new_model_count": 23,
-    "rising_model_count": 0,
-    "total_downloads": 7282979,
-    "total_likes": 13160,
-    "avg_radar_score": 36.0
+    "total_downloads": 38315593,
+    "total_likes": 40073,
+    "avg_radar_score": 47.7
   },
   {
     "family": "Other",
@@ -41,25 +32,34 @@
     "new_model_count": 19,
     "rising_model_count": 0,
     "total_downloads": 46905546,
-    "total_likes": 16359,
+    "total_likes": 16361,
     "avg_radar_score": 48.3
   },
   {
-    "family": "Gemma",
-    "model_count": 18,
-    "new_model_count": 18,
+    "family": "Phi",
+    "model_count": 19,
+    "new_model_count": 19,
     "rising_model_count": 0,
-    "total_downloads": 22159107,
-    "total_likes": 7475,
-    "avg_radar_score": 49.0
+    "total_downloads": 6690267,
+    "total_likes": 13160,
+    "avg_radar_score": 36.9
+  },
+  {
+    "family": "Gemma",
+    "model_count": 17,
+    "new_model_count": 17,
+    "rising_model_count": 0,
+    "total_downloads": 21574410,
+    "total_likes": 7477,
+    "avg_radar_score": 50.3
   },
   {
     "family": "Mistral",
-    "model_count": 12,
-    "new_model_count": 12,
+    "model_count": 10,
+    "new_model_count": 10,
     "rising_model_count": 0,
-    "total_downloads": 4016644,
-    "total_likes": 9947,
-    "avg_radar_score": 44.2
+    "total_downloads": 3615403,
+    "total_likes": 9948,
+    "avg_radar_score": 46.5
   }
 ]
