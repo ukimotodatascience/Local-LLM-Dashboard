@@ -8,10 +8,11 @@ import { FamilyTrends } from './components/FamilyTrends';
 import { About } from './components/About';
 import { ModelDetailModal } from './components/ModelDetailModal';
 import type { ModelItem, FamilyTrendItem, SummaryData, MetadataData } from './types';
-import { ShieldAlert } from 'lucide-react';
+import { ShieldAlert, Menu } from 'lucide-react';
 
 function App() {
   const [activePage, setActivePage] = useState<string>('home');
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   const [models, setModels] = useState<ModelItem[] | null>(null);
   const [summary, setSummary] = useState<SummaryData | null>(null);
   const [rising, setRising] = useState<ModelItem[] | null>(null);
@@ -19,7 +20,7 @@ function App() {
   const [trends, setTrends] = useState<FamilyTrendItem[] | null>(null);
   const [metadata, setMetadata] = useState<MetadataData | null>(null);
   const [selectedModel, setSelectedModel] = useState<ModelItem | null>(null);
-  
+
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -154,18 +155,31 @@ function App() {
   };
 
   return (
-    <div style={styles.appContainer}>
+    <div className="app-container">
       {/* Sidebar Navigation */}
       <Sidebar
         activePage={activePage}
         setActivePage={setActivePage}
         metadata={metadata}
+        isOpen={isSidebarOpen}
+        onClose={() => setIsSidebarOpen(false)}
       />
 
-      {/* Main Content Pane */}
-      <main style={styles.mainContent}>
-        {renderContent()}
-      </main>
+      <div style={{ display: 'flex', flexDirection: 'column', width: '100%', flex: 1 }}>
+        {/* Mobile Sticky Header (P2 address) */}
+        <div className="mobile-header">
+          <button onClick={() => setIsSidebarOpen(true)} className="menu-toggle-btn" aria-label="Open menu">
+            <Menu size={24} />
+          </button>
+          <span style={{ fontWeight: 700, fontSize: '1.1rem' }} className="text-gradient">LLM Radar</span>
+          <div style={{ width: 24 }} />
+        </div>
+
+        {/* Main Content Pane */}
+        <main className="main-content">
+          {renderContent()}
+        </main>
+      </div>
 
       {/* Model Detail Popup Modal */}
       {selectedModel && (
@@ -179,17 +193,6 @@ function App() {
 }
 
 const styles = {
-  appContainer: {
-    display: 'flex',
-    minHeight: '100vh',
-  },
-  mainContent: {
-    marginLeft: 'var(--sidebar-width)',
-    flex: 1,
-    padding: '32px 48px',
-    maxWidth: '1200px',
-    width: 'calc(100% - var(--sidebar-width))',
-  },
   centerBox: {
     display: 'flex',
     flexDirection: 'column' as const,

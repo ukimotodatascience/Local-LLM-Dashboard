@@ -1,13 +1,15 @@
 import React from 'react';
-import { Home, Compass, TrendingUp, Sparkles, BarChart2, Info, ShieldAlert, Cpu } from 'lucide-react';
+import { Home, Compass, TrendingUp, Sparkles, BarChart2, Info, ShieldAlert, Cpu, X } from 'lucide-react';
 
 interface SidebarProps {
   activePage: string;
   setActivePage: (page: string) => void;
   metadata: { collected_at: string } | null;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage, metadata }) => {
+export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage, metadata, isOpen, onClose }) => {
   const menuItems = [
     { id: 'home', label: 'Home', icon: <Home size={18} /> },
     { id: 'explorer', label: 'Model Explorer', icon: <Compass size={18} /> },
@@ -25,7 +27,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage, met
         month: 'numeric',
         day: 'numeric',
         hour: '2-digit',
-        minute: '2-digit'
+        minute: '2-digit',
+        timeZone: 'Asia/Tokyo'
       }) + ' JST';
     } catch {
       return 'Unknown';
@@ -33,7 +36,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage, met
   };
 
   return (
-    <aside style={styles.sidebar}>
+    <aside style={styles.sidebar} className={isOpen ? 'active' : ''}>
+      {/* Mobile Close Button */}
+      <button onClick={onClose} className="mobile-close-btn" aria-label="Close sidebar">
+        <X size={20} />
+      </button>
       {/* Brand Logo */}
       <div style={styles.brand}>
         <div style={styles.logoIcon}>
@@ -53,7 +60,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage, met
             return (
               <li key={item.id}>
                 <button
-                  onClick={() => setActivePage(item.id)}
+                  onClick={() => {
+                    setActivePage(item.id);
+                    onClose();
+                  }}
                   style={{
                     ...styles.navLink,
                     ...(isActive ? styles.navLinkActive : {}),

@@ -8,7 +8,7 @@
   --bg-main: #060913;
   --bg-gradient-start: #080d1a;
   --bg-gradient-end: #03050a;
-  
+
   --card-bg: rgba(13, 20, 38, 0.45);
   --card-bg-hover: rgba(20, 30, 58, 0.65);
   --card-border: rgba(255, 255, 255, 0.06);
@@ -41,7 +41,7 @@
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-main);
-  background-image: 
+  background-image:
     radial-gradient(circle at 10% 20%, rgba(124, 58, 237, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 90% 80%, rgba(6, 118, 212, 0.08) 0%, transparent 40%),
     linear-gradient(to bottom, var(--bg-gradient-start), var(--bg-gradient-end));
@@ -195,4 +195,96 @@ input, select, button {
 
 .glow-animation {
   animation: pulse-glow 3s infinite ease-in-out;
+}
+
+/* Home Grid Responsive (P2 address) */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 28px;
+}
+
+@media (max-width: 960px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* App Layout & Mobile Side Menu (P2 address) */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: var(--sidebar-width);
+  flex: 1;
+  padding: 32px 48px;
+  max-width: 1200px;
+  width: calc(100% - var(--sidebar-width));
+  transition: var(--transition-smooth);
+}
+
+.mobile-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(8, 13, 26, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.menu-toggle-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-close-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  aside {
+    transform: translateX(-100%);
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.6);
+    transition: var(--transition-smooth);
+  }
+
+  aside.active {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 24px 16px !important;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+
+  .mobile-close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }

@@ -70,7 +70,7 @@ export const ModelExplorer: React.FC<ModelExplorerProps> = ({ models, onSelectMo
       result = result.filter((m) => {
         const num = parseSizeNum(m.model_size);
         if (num === 0) return false;
-        
+
         if (selectedSize === '0.1B-3B') return num >= 0.1 && num <= 3.9;
         if (selectedSize === '4B-9B') return num >= 4.0 && num <= 9.9;
         if (selectedSize === '10B-20B') return num >= 10.0 && num <= 20.9;
@@ -130,7 +130,7 @@ export const ModelExplorer: React.FC<ModelExplorerProps> = ({ models, onSelectMo
               style={styles.searchInput}
             />
           </div>
-          
+
           <div style={styles.sortWrapper}>
             <ArrowUpDown size={16} style={{ color: 'var(--text-muted)' }} />
             <select

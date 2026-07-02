@@ -49,7 +49,7 @@ export const Home: React.FC<HomeProps> = ({ summary, onSelectModel, setActivePag
       </section>
 
       {/* Main Highlights Grid */}
-      <div style={styles.grid}>
+      <div className="home-grid">
         {/* Left Column: Top Radar Models */}
         <section style={styles.mainCol}>
           <div style={styles.sectionHeader}>
@@ -198,14 +198,7 @@ const styles = {
     color: 'var(--text-muted)',
     marginTop: '2px',
   },
-  grid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 320px',
-    gap: '28px',
-    '@media (max-width: 960px)': {
-      gridTemplateColumns: '1fr',
-    }
-  },
+
   mainCol: {
     display: 'flex',
     flexDirection: 'column' as const,
