@@ -44,7 +44,7 @@ export const ModelDetailModal: React.FC<ModelDetailModalProps> = ({ model, onClo
         </div>
 
         {/* Content Grid */}
-        <div style={styles.contentGrid}>
+        <div className="modal-grid">
           {/* Main Info */}
           <div style={styles.leftCol}>
             {model.description && (
@@ -277,14 +277,7 @@ const styles = {
       color: '#fff',
     }
   },
-  contentGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 300px',
-    gap: 32,
-    '@media (max-width: 768px)': {
-      gridTemplateColumns: '1fr',
-    }
-  },
+
   leftCol: {
     display: 'flex',
     flexDirection: 'column' as const,

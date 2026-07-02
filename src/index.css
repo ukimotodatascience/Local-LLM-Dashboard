@@ -288,3 +288,17 @@ input, select, button {
     right: 20px;
   }
 }
+
+/* Model Detail Modal Responsive Grid (P2 address) */
+.modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .modal-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
