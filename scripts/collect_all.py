@@ -166,6 +166,7 @@ def main():
             print(f"Wrote: {os.path.basename(filepath)}")
         except Exception as e:
             print(f"Error writing file {filepath}: {e}")
+            sys.exit(1)
 
     print("Data collection and generation pipeline completed successfully.")
 

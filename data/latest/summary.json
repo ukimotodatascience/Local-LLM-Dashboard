@@ -1,7 +1,7 @@
 {
   "total_models": 402,
   "total_downloads": 1660888450,
-  "total_likes": 284540,
+  "total_likes": 284557,
   "top_rising_models": [],
   "top_new_models": [
     {
@@ -19,20 +19,20 @@
       "quantization": "GGUF",
       "license": "apache-2.0",
       "downloads": 1250562,
-      "likes": 1207,
+      "likes": 1209,
       "last_modified": "2026-06-28T17:05:20.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.034035Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "Vision",
-        "Reasoning",
         "RAG",
-        "Lightweight"
+        "Reasoning",
+        "Lightweight",
+        "Vision"
       ],
       "tags": [
         "gguf",
@@ -58,8 +58,8 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0016597510373443983,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "growth_rate": 0.0016570008285004142,
+      "collected_at": "2026-07-02T15:03:22.034035Z",
       "radar_score": 65.2,
       "is_new": true,
       "is_rising": false
@@ -79,10 +79,10 @@
       "quantization": "GGUF",
       "license": "apache-2.0",
       "downloads": 614069,
-      "likes": 2559,
+      "likes": 2560,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.035098Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": 131072,
@@ -93,8 +93,8 @@
       "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
       "use_cases": [
         "Reasoning",
-        "Coding",
-        "General"
+        "General",
+        "Coding"
       ],
       "tags": [
         "gguf",
@@ -113,8 +113,8 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "growth_rate": 0.00039077764751856197,
+      "collected_at": "2026-07-02T15:03:22.035098Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -137,7 +137,7 @@
       "likes": 928,
       "last_modified": "2026-06-09T14:49:06.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.034035Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -162,7 +162,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "collected_at": "2026-07-02T15:03:22.034035Z",
       "radar_score": 64.8,
       "is_new": true,
       "is_rising": false
@@ -185,7 +185,7 @@
       "likes": 717,
       "last_modified": "2026-06-09T15:32:24.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.034035Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -210,7 +210,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "collected_at": "2026-07-02T15:03:22.034035Z",
       "radar_score": 64.5,
       "is_new": true,
       "is_rising": false
@@ -233,7 +233,7 @@
       "likes": 507,
       "last_modified": "2026-06-09T14:49:01.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.035098Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -258,7 +258,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "collected_at": "2026-07-02T15:03:22.035098Z",
       "radar_score": 63.3,
       "is_new": true,
       "is_rising": false
@@ -280,20 +280,20 @@
       "quantization": "GGUF",
       "license": "apache-2.0",
       "downloads": 1250562,
-      "likes": 1207,
+      "likes": 1209,
       "last_modified": "2026-06-28T17:05:20.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.034035Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "Vision",
-        "Reasoning",
         "RAG",
-        "Lightweight"
+        "Reasoning",
+        "Lightweight",
+        "Vision"
       ],
       "tags": [
         "gguf",
@@ -319,8 +319,8 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0016597510373443983,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "growth_rate": 0.0016570008285004142,
+      "collected_at": "2026-07-02T15:03:22.034035Z",
       "radar_score": 65.2,
       "is_new": true,
       "is_rising": false
@@ -340,10 +340,10 @@
       "quantization": "GGUF",
       "license": "apache-2.0",
       "downloads": 614069,
-      "likes": 2559,
+      "likes": 2560,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.035098Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": 131072,
@@ -354,8 +354,8 @@
       "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
       "use_cases": [
         "Reasoning",
-        "Coding",
-        "General"
+        "General",
+        "Coding"
       ],
       "tags": [
         "gguf",
@@ -374,8 +374,8 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "growth_rate": 0.00039077764751856197,
+      "collected_at": "2026-07-02T15:03:22.035098Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -398,7 +398,7 @@
       "likes": 928,
       "last_modified": "2026-06-09T14:49:06.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.034035Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -423,7 +423,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "collected_at": "2026-07-02T15:03:22.034035Z",
       "radar_score": 64.8,
       "is_new": true,
       "is_rising": false
@@ -446,7 +446,7 @@
       "likes": 717,
       "last_modified": "2026-06-09T15:32:24.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.034035Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -471,7 +471,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "collected_at": "2026-07-02T15:03:22.034035Z",
       "radar_score": 64.5,
       "is_new": true,
       "is_rising": false
@@ -494,7 +494,7 @@
       "likes": 507,
       "last_modified": "2026-06-09T14:49:01.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-02T14:28:35.419115Z",
+      "last_seen_at": "2026-07-02T15:03:22.035098Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -519,7 +519,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-02T14:28:35.419115Z",
+      "collected_at": "2026-07-02T15:03:22.035098Z",
       "radar_score": 63.3,
       "is_new": true,
       "is_rising": false

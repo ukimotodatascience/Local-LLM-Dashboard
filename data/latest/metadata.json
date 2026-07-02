@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-02T14:28:35.610783Z",
+  "collected_at": "2026-07-02T15:03:22.251396Z",
   "data_version": "1.0.0",
   "total_count": 402,
   "sources": [
@@ -11,7 +11,7 @@
     {
       "name": "OpenRouter API",
       "status": "success",
-      "count": 338
+      "count": 340
     },
     {
       "name": "Ollama Catalog",
