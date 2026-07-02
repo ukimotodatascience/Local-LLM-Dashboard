@@ -43,6 +43,37 @@ class HuggingFaceCollector:
                         model_id = model.get("id")
                         if not model_id:
                             continue
+
+                        # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み等) の早期除外
+                        pipeline_tag = model.get("pipeline_tag")
+                        tags = model.get("tags") or []
+                        has_gguf = (
+                            "gguf" in tags
+                            or "gguf" in model_id.lower()
+                            or any("gguf" in str(t).lower() for t in tags)
+                        )
+
+                        is_llm = False
+                        if pipeline_tag in ["text-generation", "conversational"]:
+                            is_llm = True
+                        elif not pipeline_tag and has_gguf:
+                            id_lower = model_id.lower()
+                            non_llm_kws = [
+                                "whisper",
+                                "embedding",
+                                "sentence-transformer",
+                                "vit-",
+                                "nsfw-",
+                                "stable-diffusion",
+                                "wav2vec2",
+                                "phishing",
+                            ]
+                            if not any(kw in id_lower for kw in non_llm_kws):
+                                is_llm = True
+
+                        if not is_llm:
+                            continue
+
                         # 重複は後続でマージされ、ダウンロード数が多いクエリの結果が優先されるように上書きするか、保持する
                         # downloads や likes が多い方を優先して保持
                         existing = models_map.get(model_id)
@@ -51,11 +82,14 @@ class HuggingFaceCollector:
                         ):
                             models_map[model_id] = model
                 else:
-                    print(
+                    # P1指摘対応: 一部のクエリ失敗でもFatalなエラーとして例外を送出する
+                    raise RuntimeError(
                         f"HF API returned status {response.status_code} for query {q}"
                     )
             except Exception as e:
+                # P1指摘対応: 例外発生時もFatalとして再送出する
                 print(f"Error collecting Hugging Face models for query {q}: {e}")
+                raise e
 
         results = []
         for model_id, m in models_map.items():

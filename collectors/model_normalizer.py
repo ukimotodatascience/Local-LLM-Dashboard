@@ -109,10 +109,10 @@ class ModelNormalizer:
         # 1. 推定ファミリーの特定
         family = "Other"
         family_map = {
+            "deepseek": "DeepSeek",  # P2指摘対応: 蒸留モデルがベース側(Qwen/Llama)に誤分類されるのを防ぐため最優先にする
             "qwen": "Qwen",
             "llama": "Llama",
             "gemma": "Gemma",
-            "deepseek": "DeepSeek",
             "mistral": "Mistral",
             "phi": "Phi",
             "smollm": "SmolLM",
@@ -213,6 +213,23 @@ class ModelNormalizer:
         for ol in sorted_ol_models:
             ol_name = ol["model_name"]
 
+            # P1指摘対応: 世代トークンの厳密な一致確認 (qwen3に対するqwen2.5、gemma3に対するgemma2等の誤マッチ防止)
+            gen_match = re.search(r"(\d+(?:\.\d+)?|r\d+)", ol_name)
+            if gen_match:
+                gen_token = gen_match.group(1)
+                if gen_token == "3" and (
+                    "3.1" in model_id_lower or "3.2" in model_id_lower
+                ):
+                    continue
+                if gen_token == "2" and ("2.5" in model_id_lower):
+                    continue
+                # モデルIDに世代トークンが含まれているか境界チェック
+                if not re.search(
+                    r"(?:^|[^a-zA-Z])" + re.escape(gen_token) + r"(?:[^a-zA-Z]|$)",
+                    model_id_lower,
+                ):
+                    continue
+
             # 1. カタログモデル名がモデルIDに含まれるか (例: "llama3.2" in "meta-llama/Llama-3.2-3B")
             if ol_name in model_id_lower:
                 if size != "unknown":
@@ -227,7 +244,18 @@ class ModelNormalizer:
                 ol_sizes = [s.upper() for s in ol.get("sizes", [])]
                 if size in ol_sizes:
                     if family.lower() in model_id_lower:
-                        return True, ol["ollama_url"]
+                        # ファミリー一致時のフォールバックでも世代トークンの整合性をチェック
+                        if gen_match:
+                            gen_token = gen_match.group(1)
+                            if re.search(
+                                r"(?:^|[^a-zA-Z])"
+                                + re.escape(gen_token)
+                                + r"(?:[^a-zA-Z]|$)",
+                                model_id_lower,
+                            ):
+                                return True, ol["ollama_url"]
+                        else:
+                            return True, ol["ollama_url"]
 
         return False, None
 
@@ -263,12 +291,28 @@ class ModelNormalizer:
                         if is_vl_hf != is_vl_or:
                             continue
 
-                        # P2指摘対応: 世代バージョンの整合性確認 (例: qwen2.5 と qwen3, llama3.1 と llama3 などのミスマッチ防止)
-                        versions = ["2.5", "3.1", "3.2", "3", "4"]
-                        hf_versions = [v for v in versions if v in model_id_lower]
-                        or_versions = [v for v in versions if v in or_id]
+                        # P1指摘対応: 世代バージョンの厳格な整合性確認 (gemma-4とgemma-3、qwen3.5とqwen3等の誤マッチ防止)
+                        versions = ["2.5", "3.1", "3.2", "1.5", "3", "4", "2", "1"]
+                        hf_versions = [
+                            v
+                            for v in versions
+                            if re.search(
+                                r"(?:^|[^a-zA-Z])" + re.escape(v) + r"(?:[^a-zA-Z]|$)",
+                                model_id_lower,
+                            )
+                        ]
+                        or_versions = [
+                            v
+                            for v in versions
+                            if re.search(
+                                r"(?:^|[^a-zA-Z])" + re.escape(v) + r"(?:[^a-zA-Z]|$)",
+                                or_id,
+                            )
+                        ]
                         if hf_versions and or_versions:
-                            if not (set(hf_versions) & set(or_versions)):
+                            best_hf_v = sorted(hf_versions, key=len, reverse=True)[0]
+                            best_or_v = sorted(or_versions, key=len, reverse=True)[0]
+                            if best_hf_v != best_or_v:
                                 continue
 
                         # 指導データかどうかの整合性も考慮
@@ -302,11 +346,11 @@ class ModelNormalizer:
             use_cases.append("Coding")
 
         # 2. Japanese
-        # P2指摘対応: 部分一致による誤判定 (Ministral や Janus -> ja など) を防ぐため、単語境界および完全タグ一致でチェック
+        # P2指摘対応: 部分一致による誤判定 (Jackrong, janhq, javanese 等) を防ぐため、独立した言語コード境界のみでチェック
         has_ja_keyword = (
             "japanese" in model_id_lower
             or "nihongo" in model_id_lower
-            or re.search(r"(?:^|[^a-zA-Z])ja(?:[^a-zA-Z]|$)", model_id_lower)
+            or re.search(r"(?:^|[-_\/])ja(?:[-_\/]|$|\.)", model_id_lower)
             or "japanese" in tags_lower
             or "ja" in tags_lower
         )
@@ -388,7 +432,8 @@ class ModelNormalizer:
         # 2. Growth Score (25%)
         # item 内に格納済みの growth_rate を利用
         growth_rate = item.get("growth_rate", 0.0)
-        growth_score = min(100.0, growth_rate * 333.3)
+        # P2指摘対応: マイナス成長率を0.0にクランプ
+        growth_score = max(0.0, min(100.0, growth_rate * 333.3))
 
         # 3. Recency Score (15%)
         # 最終更新日時からの経過時間に基づく
