@@ -1,4 +1,5 @@
 import requests
+import re
 from datetime import datetime
 
 
@@ -59,8 +60,32 @@ class HuggingFaceCollector:
                         if any(kw in id_lower for kw in test_kws):
                             continue
 
-                        # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み等) の早期除外
+                        # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み、画像検出等) の早期除外
                         pipeline_tag = model.get("pipeline_tag")
+                        allowed_pipeline_tags = ["text-generation", "conversational"]
+                        if pipeline_tag and pipeline_tag not in allowed_pipeline_tags:
+                            continue
+
+                        id_lower = model_id.lower()
+                        non_llm_kws = [
+                            "whisper",
+                            "embedding",
+                            "sentence-transformer",
+                            "vit",
+                            "nsfw",
+                            "stable-diffusion",
+                            "wav2vec2",
+                            "phishing",
+                            "bert",
+                            "clip",
+                            "resnet",
+                            "speech",
+                            "audio",
+                            "translation",
+                        ]
+                        if any(kw in id_lower for kw in non_llm_kws):
+                            continue
+
                         tags = model.get("tags") or []
                         has_gguf = (
                             "gguf" in tags
@@ -69,22 +94,10 @@ class HuggingFaceCollector:
                         )
 
                         is_llm = False
-                        if pipeline_tag in ["text-generation", "conversational"]:
+                        if pipeline_tag in allowed_pipeline_tags:
                             is_llm = True
                         elif not pipeline_tag and has_gguf:
-                            id_lower = model_id.lower()
-                            non_llm_kws = [
-                                "whisper",
-                                "embedding",
-                                "sentence-transformer",
-                                "vit-",
-                                "nsfw-",
-                                "stable-diffusion",
-                                "wav2vec2",
-                                "phishing",
-                            ]
-                            if not any(kw in id_lower for kw in non_llm_kws):
-                                is_llm = True
+                            is_llm = True
 
                         if not is_llm:
                             continue
@@ -128,35 +141,62 @@ class HuggingFaceCollector:
             elif isinstance(license_info, list):
                 license_info = None
 
+            # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み、画像検出等) の除外
+            pipeline_tag = m.get("pipeline_tag")
+            allowed_pipeline_tags = ["text-generation", "conversational"]
+            if pipeline_tag and pipeline_tag not in allowed_pipeline_tags:
+                continue
+
+            id_lower = model_id.lower()
+            non_llm_kws = [
+                "whisper",
+                "embedding",
+                "sentence-transformer",
+                "vit",
+                "nsfw",
+                "stable-diffusion",
+                "wav2vec2",
+                "phishing",
+                "bert",
+                "clip",
+                "resnet",
+                "speech",
+                "audio",
+                "translation",
+            ]
+            if any(kw in id_lower for kw in non_llm_kws):
+                continue
+
             # GGUF対応有無の判定
             # タグに 'gguf' が含まれるか、モデルID名に 'gguf' が含まれるか
             has_gguf = (
                 "gguf" in tags
-                or "gguf" in model_id.lower()
+                or "gguf" in id_lower
                 or any("gguf" in str(t).lower() for t in tags)
             )
 
-            # P2指摘対応: 非LLMモデル (音声認識、画像分類、埋め込み、画像検出等) の除外
-            pipeline_tag = m.get("pipeline_tag")
             is_llm = False
-            if pipeline_tag in ["text-generation", "conversational"]:
+            if pipeline_tag in allowed_pipeline_tags:
                 is_llm = True
             elif not pipeline_tag and has_gguf:
-                # pipeline_tagが未定義でもGGUFであり、かつ非LLMの特定キーワードがモデルIDに含まれなければ許可
-                id_lower = model_id.lower()
-                non_llm_kws = [
-                    "whisper",
-                    "embedding",
-                    "sentence-transformer",
-                    "vit-",
-                    "nsfw-",
-                    "stable-diffusion",
-                ]
-                if not any(kw in id_lower for kw in non_llm_kws):
-                    is_llm = True
+                is_llm = True
 
             if not is_llm:
                 continue
+
+            # siblingsからGGUFの量子化一覧をパースする
+            gguf_quants = []
+            siblings = m.get("siblings") or []
+            for sib in siblings:
+                rfile = sib.get("rfilename")
+                if rfile and rfile.lower().endswith(".gguf"):
+                    q_match = re.search(
+                        r"(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)",
+                        rfile.lower(),
+                    )
+                    if q_match:
+                        gguf_quants.append(q_match.group(1).upper())
+            gguf_quants = sorted(list(set(gguf_quants)))
 
             # 最終更新日時
             last_modified_str = m.get("lastModified")
@@ -175,6 +215,7 @@ class HuggingFaceCollector:
                     "library_name": m.get("library_name"),
                     "license": str(license_info) if license_info else None,
                     "has_gguf": has_gguf,
+                    "gguf_quants": gguf_quants,
                     "model_url": f"https://huggingface.co/{model_id}",
                     "collected_at": datetime.utcnow().isoformat() + "Z",
                 }

@@ -1,65 +1,65 @@
 [
   {
     "family": "Qwen",
-    "model_count": 42,
-    "new_model_count": 42,
+    "model_count": 41,
+    "new_model_count": 41,
     "rising_model_count": 0,
-    "total_downloads": 150155028,
-    "total_likes": 15519,
-    "avg_radar_score": 45.2
+    "total_downloads": 149464996,
+    "total_likes": 15443,
+    "avg_radar_score": 43.2
   },
   {
     "family": "DeepSeek",
     "model_count": 34,
     "new_model_count": 34,
-    "rising_model_count": 0,
-    "total_downloads": 36428273,
-    "total_likes": 42535,
-    "avg_radar_score": 45.8
+    "rising_model_count": 2,
+    "total_downloads": 36669882,
+    "total_likes": 42577,
+    "avg_radar_score": 47.7
   },
   {
     "family": "Llama",
     "model_count": 30,
     "new_model_count": 30,
     "rising_model_count": 0,
-    "total_downloads": 38315593,
-    "total_likes": 40073,
-    "avg_radar_score": 47.7
-  },
-  {
-    "family": "Other",
-    "model_count": 19,
-    "new_model_count": 19,
-    "rising_model_count": 0,
-    "total_downloads": 46905546,
-    "total_likes": 16361,
-    "avg_radar_score": 48.3
+    "total_downloads": 38036864,
+    "total_likes": 40116,
+    "avg_radar_score": 47.8
   },
   {
     "family": "Phi",
     "model_count": 19,
     "new_model_count": 19,
     "rising_model_count": 0,
-    "total_downloads": 6690267,
-    "total_likes": 13160,
-    "avg_radar_score": 36.9
+    "total_downloads": 6688441,
+    "total_likes": 13170,
+    "avg_radar_score": 38.0
+  },
+  {
+    "family": "Other",
+    "model_count": 18,
+    "new_model_count": 18,
+    "rising_model_count": 0,
+    "total_downloads": 47072018,
+    "total_likes": 16408,
+    "avg_radar_score": 51.0
   },
   {
     "family": "Gemma",
     "model_count": 17,
     "new_model_count": 17,
     "rising_model_count": 0,
-    "total_downloads": 21574410,
-    "total_likes": 7477,
-    "avg_radar_score": 50.3
+    "total_downloads": 21197312,
+    "total_likes": 7547,
+    "avg_radar_score": 52.4
   },
   {
     "family": "Mistral",
     "model_count": 10,
     "new_model_count": 10,
     "rising_model_count": 0,
-    "total_downloads": 3615403,
-    "total_likes": 9948,
-    "avg_radar_score": 46.5
+    "total_downloads": 3610387,
+    "total_likes": 9956,
+    "avg_radar_score": 47.0
   }
 ]

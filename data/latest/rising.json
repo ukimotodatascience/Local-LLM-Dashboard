@@ -1,1 +1,94 @@
-[]
+[
+  {
+    "id": "bartowski/DeepSeek-V4-Flash-GGUF",
+    "display_name": "DeepSeek V4 Flash GGUF",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/bartowski/DeepSeek-V4-Flash-GGUF",
+      "ollama": null,
+      "openrouter": null
+    },
+    "author": "bartowski",
+    "model_family": "DeepSeek",
+    "model_size": "unknown",
+    "quantization": "GGUF",
+    "license": "mit",
+    "downloads": 209995,
+    "likes": 28,
+    "last_modified": "2026-06-30T03:17:40.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-03T18:12:24.540360Z",
+    "has_gguf": true,
+    "has_ollama": false,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General"
+    ],
+    "tags": [
+      "gguf",
+      "text-generation",
+      "base_model:deepseek-ai/DeepSeek-V4-Flash",
+      "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+      "license:mit",
+      "endpoints_compatible",
+      "region:us",
+      "conversational"
+    ],
+    "growth_rate": 0.7458846025939475,
+    "collected_at": "2026-07-03T18:12:24.540360Z",
+    "radar_score": 79.6,
+    "is_new": true,
+    "is_rising": true
+  },
+  {
+    "id": "TheBloke/deepseek-coder-6.7B-instruct-AWQ",
+    "display_name": "deepseek coder 6.7B instruct AWQ",
+    "source": "huggingface",
+    "sources": {
+      "huggingface": "https://huggingface.co/TheBloke/deepseek-coder-6.7B-instruct-AWQ",
+      "ollama": null,
+      "openrouter": null
+    },
+    "author": "TheBloke",
+    "model_family": "DeepSeek",
+    "model_size": "6.7B",
+    "quantization": "AWQ",
+    "license": "other",
+    "downloads": 122979,
+    "likes": 19,
+    "last_modified": "2023-11-13T12:58:45.000Z",
+    "first_seen_at": "2026-07-02T14:06:26.209564Z",
+    "last_seen_at": "2026-07-03T18:12:24.541359Z",
+    "has_gguf": false,
+    "has_ollama": false,
+    "context_length": null,
+    "pricing": null,
+    "description": null,
+    "use_cases": [
+      "General",
+      "Coding",
+      "Lightweight"
+    ],
+    "tags": [
+      "transformers",
+      "safetensors",
+      "llama",
+      "text-generation",
+      "conversational",
+      "base_model:deepseek-ai/deepseek-coder-6.7b-instruct",
+      "base_model:quantized:deepseek-ai/deepseek-coder-6.7b-instruct",
+      "license:other",
+      "text-generation-inference",
+      "4-bit",
+      "awq",
+      "region:us"
+    ],
+    "growth_rate": 0.3617428856162108,
+    "collected_at": "2026-07-03T18:12:24.541359Z",
+    "radar_score": 59.2,
+    "is_new": true,
+    "is_rising": true
+  }
+]

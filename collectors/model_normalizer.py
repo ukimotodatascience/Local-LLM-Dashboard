@@ -24,7 +24,7 @@ class ModelNormalizer:
             model_id = hf["model_id"]
 
             # モデル名等のパース
-            parsed = self._parse_model_info(model_id, hf.get("tags", []))
+            parsed = self._parse_model_info(model_id, hf.get("tags", []), hf.get("gguf_quants"))
 
             # Ollama対応状況の推定・紐付け
             has_ollama, ollama_url = self._match_ollama(
@@ -100,7 +100,7 @@ class ModelNormalizer:
         normalized_list.sort(key=lambda x: x["radar_score"], reverse=True)
         return normalized_list
 
-    def _parse_model_info(self, model_id, tags):
+    def _parse_model_info(self, model_id, tags, gguf_quants=None):
         """モデルIDやタグから、ファミリー、サイズ、量子化などの情報を抽出する"""
         parts = model_id.split("/")
         name = parts[-1] if len(parts) > 1 else model_id
@@ -158,23 +158,30 @@ class ModelNormalizer:
         quant = "FP16"  # デフォルト
         if "gguf" in model_id_lower or "gguf" in tags:
             quant = "GGUF"
-            # P2指摘対応: GGUFファイル名等に含まれる Q-level (Q8_0, Q4_K_M 等) をパースして反映
-            q_match = re.search(
-                r"(?:^|[^a-zA-Z])(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)(?:[^a-zA-Z\d_]|$)",
-                model_id_lower,
-            )
-            if q_match:
-                quant = f"GGUF ({q_match.group(1).upper()})"
+            # hfモデルから引き渡されたgguf_quantsがあれば、それを利用する
+            if gguf_quants:
+                if len(gguf_quants) > 3:
+                    quant = f"GGUF ({', '.join(gguf_quants[:3])} etc.)"
+                else:
+                    quant = f"GGUF ({', '.join(gguf_quants)})"
             else:
-                for t in tags:
-                    t_str = str(t).lower()
-                    qt_match = re.search(
-                        r"^(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)$",
-                        t_str,
-                    )
-                    if qt_match:
-                        quant = f"GGUF ({qt_match.group(1).upper()})"
-                        break
+                # P2指摘対応: GGUFファイル名等に含まれる Q-level (Q8_0, Q4_K_M 等) をパースして反映
+                q_match = re.search(
+                    r"(?:^|[^a-zA-Z])(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)(?:[^a-zA-Z\d_]|$)",
+                    model_id_lower,
+                )
+                if q_match:
+                    quant = f"GGUF ({q_match.group(1).upper()})"
+                else:
+                    for t in tags:
+                        t_str = str(t).lower()
+                        qt_match = re.search(
+                            r"^(q\d(?:_[a-zA-Z\d_]+)?|iq\d(?:_[a-zA-Z\d_]+)?)$",
+                            t_str,
+                        )
+                        if qt_match:
+                            quant = f"GGUF ({qt_match.group(1).upper()})"
+                            break
         elif "gptq" in model_id_lower or "gptq" in tags:
             quant = "GPTQ"
         elif "awq" in model_id_lower or "awq" in tags:
@@ -213,8 +220,33 @@ class ModelNormalizer:
             ol_name = ol["model_name"]
 
             # 1. カタログモデル名がモデルIDに含まれるか (例: "llama3.2" in "meta-llama/Llama-3.2-3B")
-            # P2指摘対応: "qwen2.5" のように密着する世代を含む直接マッチ時は世代境界チェックをバイパスする
-            if ol_name in model_id_lower:
+            # P2指摘対応: 単語境界でマッチすることを要求
+            if re.search(r"(?:^|[^a-zA-Z0-9])" + re.escape(ol_name) + r"(?:[^a-zA-Z0-9]|$)", model_id_lower):
+                # coderなどのバリアント整合性チェック
+                is_coder_hf = "coder" in model_id_lower
+                is_coder_ol = "coder" in ol_name
+                if is_coder_hf != is_coder_ol:
+                    continue
+
+                # 世代トークン整合性チェック
+                gen_match = re.search(r"(\d+(?:\.\d+)?|r\d+)", ol_name)
+                if gen_match:
+                    gen_token = gen_match.group(1)
+                    if gen_token == "3" and (
+                        "3.1" in model_id_lower or "3.2" in model_id_lower or "3.3" in model_id_lower
+                    ):
+                        continue
+                    if gen_token == "2" and ("2.5" in model_id_lower):
+                        continue
+                    # 世代トークンが独立した境界で含まれているか
+                    if not re.search(
+                        r"(?:^|[^a-zA-Z])"
+                        + re.escape(gen_token)
+                        + r"(?:[^a-zA-Z]|$)",
+                        model_id_lower,
+                    ):
+                        continue
+
                 if size != "unknown":
                     ol_sizes = [s.upper() for s in ol.get("sizes", [])]
                     if size in ol_sizes:
@@ -227,6 +259,12 @@ class ModelNormalizer:
                 ol_sizes = [s.upper() for s in ol.get("sizes", [])]
                 if size in ol_sizes:
                     if family.lower() in model_id_lower:
+                        # coder などのバリアント整合性チェック
+                        is_coder_hf = "coder" in model_id_lower
+                        is_coder_ol = "coder" in ol_name
+                        if is_coder_hf != is_coder_ol:
+                            continue
+
                         # P2指摘対応: カタログ名固有のワード（例: codegemma なら code）がある場合、それがモデルIDにも含まれることを要求
                         ol_prefix = ol_name.replace(family.lower(), "").strip("-")
                         if ol_prefix and ol_prefix not in model_id_lower:
@@ -237,7 +275,7 @@ class ModelNormalizer:
                         if gen_match:
                             gen_token = gen_match.group(1)
                             if gen_token == "3" and (
-                                "3.1" in model_id_lower or "3.2" in model_id_lower
+                                "3.1" in model_id_lower or "3.2" in model_id_lower or "3.3" in model_id_lower
                             ):
                                 continue
                             if gen_token == "2" and ("2.5" in model_id_lower):
@@ -262,75 +300,123 @@ class ModelNormalizer:
 
         model_id_lower = model_id.lower()
         fam_key = family.lower()
-        # size が 500M などの場合はMを考慮
         size_key = size.lower().replace("b", "").replace("m", "")
+
+        best_match = {}
+        best_score = -9999
+
+        # 公式オーガナイゼーション
+        official_orgs = [
+            "meta-llama",
+            "google",
+            "qwen",
+            "deepseek-ai",
+            "mistralai",
+            "microsoft",
+        ]
+        hf_author = (
+            model_id_lower.split("/")[0]
+            if "/" in model_id_lower
+            else ""
+        )
 
         for or_m in or_models:
             or_id = or_m["model_id"].lower()
 
             # ファミリー名が含まれ、かつサイズが一致することを必須とする
-            if fam_key in or_id:
-                or_size_match = re.search(
-                    r"(?:^|[^a-zA-Z])(\d+(?:\.\d+)?)[bBmM](?:[^a-zA-Z]|$)", or_id
-                )
-                if or_size_match:
-                    or_size = or_size_match.group(1)
-                    if or_size == size_key:
-                        # P2指摘対応: 特性バリアントの整合性確認 (coder, vision/vl などの有無が一致すること)
-                        is_coder_hf = "coder" in model_id_lower
-                        is_coder_or = "coder" in or_id
-                        if is_coder_hf != is_coder_or:
-                            continue
+            if fam_key not in or_id:
+                continue
 
-                        is_vl_hf = "vl" in model_id_lower or "vision" in model_id_lower
-                        is_vl_or = "vl" in or_id or "vision" in or_id
-                        if is_vl_hf != is_vl_or:
-                            continue
+            or_size_match = re.search(
+                r"(?:^|[^a-zA-Z])(\d+(?:\.\d+)?)[bBmM](?:[^a-zA-Z]|$)", or_id
+            )
+            if not or_size_match:
+                continue
 
-                        # P2指摘対応: 公式ベースモデルがサードパーティの微調整モデル(例: aion-rp)に誤マップされるのを防止
-                        official_orgs = [
-                            "meta-llama",
-                            "google",
-                            "qwen",
-                            "deepseek-ai",
-                            "mistralai",
-                            "microsoft",
-                        ]
-                        hf_author = (
-                            model_id_lower.split("/")[0]
-                            if "/" in model_id_lower
-                            else ""
-                        )
-                        if hf_author in official_orgs:
-                            or_author = or_id.split("/")[0] if "/" in or_id else ""
-                            if or_author != hf_author:
-                                continue
+            or_size = or_size_match.group(1)
+            if or_size != size_key:
+                continue
 
-                        # P2指摘対応: ファミリープレフィックス付きの世代バージョンの整合性確認 (例: gemma-4 と gemma-3, qwen2.5 と qwen3)
-                        hf_gen_match = re.search(
-                            rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower
-                        )
-                        or_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", or_id)
-                        if hf_gen_match and or_gen_match:
-                            if hf_gen_match.group(1) != or_gen_match.group(1):
-                                continue
+            # スコア計算
+            score = 0
 
-                        # 指導データかどうかの整合性も考慮
-                        is_instruct_hf = (
-                            "instruct" in model_id_lower
-                            or "chat" in model_id_lower
-                            or "it" in model_id_lower
-                        )
-                        is_instruct_or = "instruct" in or_id or "chat" in or_id
+            # 1. Coder バリアント
+            is_coder_hf = "coder" in model_id_lower
+            is_coder_or = "coder" in or_id
+            if is_coder_hf == is_coder_or:
+                score += 20
+            else:
+                score -= 50
 
-                        if is_instruct_hf == is_instruct_or:
-                            return {
-                                "context_length": or_m.get("context_length"),
-                                "pricing": or_m.get("pricing"),
-                                "description": or_m.get("description"),
-                                "license": or_m.get("license"),
-                                "model_url": f"https://openrouter.ai/models/{or_m['model_id']}",
-                            }
+            # 2. Vision/VL バリアント
+            is_vl_hf = "vl" in model_id_lower or "vision" in model_id_lower
+            is_vl_or = "vl" in or_id or "vision" in or_id
+            if is_vl_hf == is_vl_or:
+                score += 20
+            else:
+                score -= 50
+
+            # 3. Instruct/Chat バリアント
+            is_instruct_hf = (
+                "instruct" in model_id_lower
+                or "chat" in model_id_lower
+                or "it" in model_id_lower
+            )
+            is_instruct_or = "instruct" in or_id or "chat" in or_id
+            if is_instruct_hf == is_instruct_or:
+                score += 10
+            else:
+                score -= 30
+
+            # 4. 世代トークンの整合性
+            hf_gen_match = re.search(
+                rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower
+            )
+            or_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", or_id)
+            if hf_gen_match and or_gen_match:
+                if hf_gen_match.group(1) == or_gen_match.group(1):
+                    score += 40
+                else:
+                    score -= 100
+            elif not hf_gen_match and not or_gen_match:
+                score += 20
+            else:
+                score -= 30
+
+            # 5. Author/Org の整合性
+            or_author = or_id.split("/")[0] if "/" in or_id else ""
+            if hf_author in official_orgs:
+                if or_author == hf_author:
+                    score += 30
+                else:
+                    score -= 100
+            else:
+                if or_author == hf_author:
+                    score += 10
+
+            # 6. トークン類似性
+            hf_name = model_id_lower.split("/")[-1]
+            or_name = or_id.split("/")[-1]
+            hf_tokens = set(re.findall(r'[a-z0-9]+', hf_name))
+            or_tokens = set(re.findall(r'[a-z0-9]+', or_name))
+            intersection = hf_tokens.intersection(or_tokens)
+            if hf_tokens:
+                score += int((len(intersection) / len(hf_tokens)) * 20)
+
+            # ベストスコアの更新
+            if score > best_score:
+                best_score = score
+                best_match = or_m
+
+        # 最低しきい値 (ミスマッチがなく、ある程度適合していること)
+        if best_score > 0 and best_match:
+            return {
+                "context_length": best_match.get("context_length"),
+                "pricing": best_match.get("pricing"),
+                "description": best_match.get("description"),
+                "license": best_match.get("license"),
+                "model_url": f"https://openrouter.ai/models/{best_match['model_id']}",
+            }
 
         return {}
 
@@ -347,12 +433,12 @@ class ModelNormalizer:
 
         # 2. Japanese
         # P2指摘対応: 部分一致による誤判定 (Jackrong, janhq, javanese 等) を防ぐため、独立した言語コード境界のみでチェック
+        # 多言語モデルの言語タグに 'ja' が含まれているだけでJapanese分類されるのを防ぐため、tags_lowerの単体 'ja' のみではJapanese判定しない
         has_ja_keyword = (
             "japanese" in model_id_lower
             or "nihongo" in model_id_lower
             or re.search(r"(?:^|[-_\/])ja(?:[-_\/]|$|\.)", model_id_lower)
             or "japanese" in tags_lower
-            or "ja" in tags_lower
         )
         if has_ja_keyword:
             use_cases.append("Japanese")
