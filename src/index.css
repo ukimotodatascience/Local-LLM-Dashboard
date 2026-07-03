@@ -317,3 +317,18 @@ input, select, button {
     width: 100% !important;
   }
 }
+
+/* Family Trends Grid (P3 address) */
+.family-trends-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .family-trends-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

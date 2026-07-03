@@ -1,51 +1,9 @@
 {
   "total_models": 169,
   "total_downloads": 302739900,
-  "total_likes": 145218,
+  "total_likes": 145217,
   "top_rising_models": [],
   "top_new_models": [
-    {
-      "id": "lmstudio-community/gemma-4-12B-it-QAT-GGUF",
-      "display_name": "gemma 4 12B it QAT GGUF",
-      "source": "huggingface",
-      "sources": {
-        "huggingface": "https://huggingface.co/lmstudio-community/gemma-4-12B-it-QAT-GGUF",
-        "ollama": null,
-        "openrouter": null
-      },
-      "author": "lmstudio-community",
-      "model_family": "Gemma",
-      "model_size": "12B",
-      "quantization": "GGUF (Q4_0)",
-      "license": "apache-2.0",
-      "downloads": 692942,
-      "likes": 10,
-      "last_modified": "2026-06-05T15:08:44.000Z",
-      "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
-      "has_gguf": true,
-      "has_ollama": false,
-      "context_length": null,
-      "pricing": null,
-      "description": null,
-      "use_cases": [
-        "General"
-      ],
-      "tags": [
-        "gguf",
-        "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
-        "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
-        "license:apache-2.0",
-        "endpoints_compatible",
-        "region:us",
-        "conversational"
-      ],
-      "growth_rate": 0.1111111111111111,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
-      "radar_score": 68.3,
-      "is_new": true,
-      "is_rising": false
-    },
     {
       "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "display_name": "gemma 4 12B coder fable5 composer2.5 v1 GGUF",
@@ -64,16 +22,16 @@
       "likes": 2584,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
         "Reasoning",
-        "Coding"
+        "Coding",
+        "General"
       ],
       "tags": [
         "gguf",
@@ -93,7 +51,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -116,7 +74,7 @@
       "likes": 986,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -146,7 +104,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 62.9,
       "is_new": true,
       "is_rising": false
@@ -169,7 +127,7 @@
       "likes": 675,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -188,7 +146,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 62.4,
       "is_new": true,
       "is_rising": false
@@ -211,15 +169,15 @@
       "likes": 407,
       "last_modified": "2026-06-25T14:12:12.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
-        "Lightweight"
+        "Lightweight",
+        "General"
       ],
       "tags": [
         "transformers",
@@ -231,56 +189,78 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 61.6,
+      "is_new": true,
+      "is_rising": false
+    },
+    {
+      "id": "Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+      "display_name": "Qwopus3.6 27B Coder MTP GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+        "ollama": null,
+        "openrouter": null
+      },
+      "author": "Jackrong",
+      "model_family": "Other",
+      "model_size": "27B",
+      "quantization": "GGUF (IQ4_XS, Q2_K, Q3_K_L etc.)",
+      "license": "apache-2.0",
+      "downloads": 291856,
+      "likes": 320,
+      "last_modified": "2026-06-24T14:30:11.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "has_gguf": true,
+      "has_ollama": false,
+      "context_length": null,
+      "pricing": null,
+      "description": null,
+      "use_cases": [
+        "Reasoning",
+        "Coding",
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "text-generation-inference",
+        "unsloth",
+        "qwen3_6",
+        "reasoning",
+        "chain-of-thought",
+        "lora",
+        "sft",
+        "agent",
+        "tool-use",
+        "function-calling",
+        "coder",
+        "text-generation",
+        "en",
+        "zh",
+        "es",
+        "ru",
+        "ja",
+        "dataset:Jackrong/Claude-opus-4.6-TraceInversion-9000x",
+        "dataset:Jackrong/Claude-opus-4.7-TraceInversion-5000x",
+        "dataset:lambda/hermes-agent-reasoning-traces",
+        "base_model:Jackrong/Qwopus3.6-27B-v2",
+        "base_model:adapter:Jackrong/Qwopus3.6-27B-v2",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+      ],
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T18:57:18.708624Z",
+      "radar_score": 61.4,
       "is_new": true,
       "is_rising": false
     }
   ],
   "top_radar_models": [
     {
-      "id": "lmstudio-community/gemma-4-12B-it-QAT-GGUF",
-      "display_name": "gemma 4 12B it QAT GGUF",
-      "source": "huggingface",
-      "sources": {
-        "huggingface": "https://huggingface.co/lmstudio-community/gemma-4-12B-it-QAT-GGUF",
-        "ollama": null,
-        "openrouter": null
-      },
-      "author": "lmstudio-community",
-      "model_family": "Gemma",
-      "model_size": "12B",
-      "quantization": "GGUF (Q4_0)",
-      "license": "apache-2.0",
-      "downloads": 692942,
-      "likes": 10,
-      "last_modified": "2026-06-05T15:08:44.000Z",
-      "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
-      "has_gguf": true,
-      "has_ollama": false,
-      "context_length": null,
-      "pricing": null,
-      "description": null,
-      "use_cases": [
-        "General"
-      ],
-      "tags": [
-        "gguf",
-        "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
-        "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
-        "license:apache-2.0",
-        "endpoints_compatible",
-        "region:us",
-        "conversational"
-      ],
-      "growth_rate": 0.1111111111111111,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
-      "radar_score": 68.3,
-      "is_new": true,
-      "is_rising": false
-    },
-    {
       "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
       "display_name": "gemma 4 12B coder fable5 composer2.5 v1 GGUF",
       "source": "huggingface",
@@ -298,16 +278,16 @@
       "likes": 2584,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
         "Reasoning",
-        "Coding"
+        "Coding",
+        "General"
       ],
       "tags": [
         "gguf",
@@ -327,7 +307,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -350,7 +330,7 @@
       "likes": 986,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -380,7 +360,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 62.9,
       "is_new": true,
       "is_rising": false
@@ -403,7 +383,7 @@
       "likes": 675,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -422,7 +402,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 62.4,
       "is_new": true,
       "is_rising": false
@@ -445,15 +425,15 @@
       "likes": 407,
       "last_modified": "2026-06-25T14:12:12.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:40:14.955421Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
-        "Lightweight"
+        "Lightweight",
+        "General"
       ],
       "tags": [
         "transformers",
@@ -465,8 +445,72 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:40:14.955421Z",
+      "collected_at": "2026-07-03T18:57:18.708624Z",
       "radar_score": 61.6,
+      "is_new": true,
+      "is_rising": false
+    },
+    {
+      "id": "Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+      "display_name": "Qwopus3.6 27B Coder MTP GGUF",
+      "source": "huggingface",
+      "sources": {
+        "huggingface": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF",
+        "ollama": null,
+        "openrouter": null
+      },
+      "author": "Jackrong",
+      "model_family": "Other",
+      "model_size": "27B",
+      "quantization": "GGUF (IQ4_XS, Q2_K, Q3_K_L etc.)",
+      "license": "apache-2.0",
+      "downloads": 291856,
+      "likes": 320,
+      "last_modified": "2026-06-24T14:30:11.000Z",
+      "first_seen_at": "2026-07-02T14:06:26.208537Z",
+      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "has_gguf": true,
+      "has_ollama": false,
+      "context_length": null,
+      "pricing": null,
+      "description": null,
+      "use_cases": [
+        "Reasoning",
+        "Coding",
+        "General"
+      ],
+      "tags": [
+        "transformers",
+        "gguf",
+        "text-generation-inference",
+        "unsloth",
+        "qwen3_6",
+        "reasoning",
+        "chain-of-thought",
+        "lora",
+        "sft",
+        "agent",
+        "tool-use",
+        "function-calling",
+        "coder",
+        "text-generation",
+        "en",
+        "zh",
+        "es",
+        "ru",
+        "ja",
+        "dataset:Jackrong/Claude-opus-4.6-TraceInversion-9000x",
+        "dataset:Jackrong/Claude-opus-4.7-TraceInversion-5000x",
+        "dataset:lambda/hermes-agent-reasoning-traces",
+        "base_model:Jackrong/Qwopus3.6-27B-v2",
+        "base_model:adapter:Jackrong/Qwopus3.6-27B-v2",
+        "license:apache-2.0",
+        "endpoints_compatible",
+        "region:us"
+      ],
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T18:57:18.708624Z",
+      "radar_score": 61.4,
       "is_new": true,
       "is_rising": false
     }

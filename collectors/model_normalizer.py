@@ -279,9 +279,11 @@ class ModelNormalizer:
                         continue
                     if gen_token == "2" and ("2.5" in model_id_lower):
                         continue
-                    # 世代トークンが独立した境界で含まれているか
+                    # 世代トークンが独立した境界（非英数字）で含まれているか
                     if not re.search(
-                        r"(?:^|[^a-zA-Z])" + re.escape(gen_token) + r"(?:[^a-zA-Z]|$)",
+                        r"(?:^|[^a-zA-Z0-9])"
+                        + re.escape(gen_token)
+                        + r"(?:[^a-zA-Z0-9]|$)",
                         model_id_lower,
                     ):
                         continue
@@ -319,11 +321,11 @@ class ModelNormalizer:
                                 continue
                             if gen_token == "2" and ("2.5" in model_id_lower):
                                 continue
-                            # 世代トークンが独立した境界で含まれているか
+                            # 世代トークンが独立した境界（非英数字）で含まれているか
                             if not re.search(
-                                r"(?:^|[^a-zA-Z])"
+                                r"(?:^|[^a-zA-Z0-9])"
                                 + re.escape(gen_token)
-                                + r"(?:[^a-zA-Z]|$)",
+                                + r"(?:[^a-zA-Z0-9]|$)",
                                 model_id_lower,
                             ):
                                 continue
@@ -375,13 +377,12 @@ class ModelNormalizer:
             # スコア計算
             score = 0
 
-            # 1. Coder バリアント
+            # 1. Coder バリアント (不一致時は即スキップして誤マッチを防止)
             is_coder_hf = "coder" in model_id_lower
             is_coder_or = "coder" in or_id
-            if is_coder_hf == is_coder_or:
-                score += 20
-            else:
-                score -= 50
+            if is_coder_hf != is_coder_or:
+                continue
+            score += 20
 
             # 2. Vision/VL バリアント
             is_vl_hf = "vl" in model_id_lower or "vision" in model_id_lower

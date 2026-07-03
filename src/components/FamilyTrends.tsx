@@ -48,7 +48,7 @@ export const FamilyTrends: React.FC<FamilyTrendsProps> = ({ trends }) => {
               </div>
 
               {/* Stats Rows */}
-              <div style={styles.statsGrid}>
+              <div className="family-trends-grid">
                 {/* Models Count */}
                 <div style={styles.statBox}>
                   <div style={styles.statHeader}>
@@ -183,16 +183,7 @@ const styles = {
     fontFamily: 'var(--font-display)',
     marginTop: '2px',
   },
-  statsGrid: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    gap: '24px',
-    marginBottom: '20px',
-    '@media (max-width: 768px)': {
-      gridTemplateColumns: '1fr',
-      gap: '16px',
-    }
-  },
+
   statBox: {
     display: 'flex',
     flexDirection: 'column' as const,
