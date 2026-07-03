@@ -409,17 +409,16 @@ class ModelNormalizer:
             else:
                 score -= 50
 
-            # 3. Instruct/Chat バリアント
+            # 3. Instruct/Chat バリアント (不一致時は即スキップして誤マッチを防止)
             is_instruct_hf = (
                 "instruct" in model_id_lower
                 or "chat" in model_id_lower
                 or "it" in model_id_lower
             )
             is_instruct_or = "instruct" in or_id or "chat" in or_id
-            if is_instruct_hf == is_instruct_or:
-                score += 10
-            else:
-                score -= 30
+            if is_instruct_hf != is_instruct_or:
+                continue
+            score += 10
 
             # 4. 世代トークンの整合性 (不一致時や有無が異なる場合は即スキップして誤マッチを防止)
             hf_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower)
@@ -556,7 +555,7 @@ class ModelNormalizer:
         ):
             use_cases.append("General")
 
-        return list(set(use_cases))
+        return list(dict.fromkeys(use_cases))
 
     def _calculate_radar_score(self, item, prev_model):
         """Radar Scoreを算出する"""

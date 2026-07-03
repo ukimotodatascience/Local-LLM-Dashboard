@@ -1,7 +1,7 @@
 {
-  "total_models": 169,
-  "total_downloads": 302739900,
-  "total_likes": 145224,
+  "total_models": 164,
+  "total_downloads": 260177071,
+  "total_likes": 131863,
   "top_rising_models": [],
   "top_new_models": [
     {
@@ -19,19 +19,19 @@
       "quantization": "GGUF (Q2_K, Q3_K_M, Q4_K_M etc.)",
       "license": "apache-2.0",
       "downloads": 628225,
-      "likes": 2584,
+      "likes": 2585,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
+        "Coding",
         "Reasoning",
-        "Coding"
+        "General"
       ],
       "tags": [
         "gguf",
@@ -50,9 +50,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 65.1,
+      "growth_rate": 0.0003869969040247678,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 65.2,
       "is_new": true,
       "is_rising": false
     },
@@ -74,15 +74,15 @@
       "likes": 987,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
-        "Reasoning"
+        "Reasoning",
+        "General"
       ],
       "tags": [
         "gguf",
@@ -103,9 +103,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0010141987829614604,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 63.0,
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 62.9,
       "is_new": true,
       "is_rising": false
     },
@@ -127,7 +127,7 @@
       "likes": 677,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -145,9 +145,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.002962962962962963,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 62.7,
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 62.4,
       "is_new": true,
       "is_rising": false
     },
@@ -169,7 +169,7 @@
       "likes": 408,
       "last_modified": "2026-06-25T14:12:12.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -188,9 +188,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.002457002457002457,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 61.9,
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 61.6,
       "is_new": true,
       "is_rising": false
     },
@@ -212,16 +212,16 @@
       "likes": 320,
       "last_modified": "2026-06-24T14:30:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
+        "Coding",
         "Reasoning",
-        "Coding"
+        "General"
       ],
       "tags": [
         "transformers",
@@ -253,7 +253,7 @@
         "region:us"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "collected_at": "2026-07-03T19:35:51.986549Z",
       "radar_score": 61.4,
       "is_new": true,
       "is_rising": false
@@ -275,19 +275,19 @@
       "quantization": "GGUF (Q2_K, Q3_K_M, Q4_K_M etc.)",
       "license": "apache-2.0",
       "downloads": 628225,
-      "likes": 2584,
+      "likes": 2585,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
+        "Coding",
         "Reasoning",
-        "Coding"
+        "General"
       ],
       "tags": [
         "gguf",
@@ -306,9 +306,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 65.1,
+      "growth_rate": 0.0003869969040247678,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 65.2,
       "is_new": true,
       "is_rising": false
     },
@@ -330,15 +330,15 @@
       "likes": 987,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
-        "Reasoning"
+        "Reasoning",
+        "General"
       ],
       "tags": [
         "gguf",
@@ -359,9 +359,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0010141987829614604,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 63.0,
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 62.9,
       "is_new": true,
       "is_rising": false
     },
@@ -383,7 +383,7 @@
       "likes": 677,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -401,9 +401,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.002962962962962963,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 62.7,
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 62.4,
       "is_new": true,
       "is_rising": false
     },
@@ -425,7 +425,7 @@
       "likes": 408,
       "last_modified": "2026-06-25T14:12:12.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -444,9 +444,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.002457002457002457,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
-      "radar_score": 61.9,
+      "growth_rate": 0.0,
+      "collected_at": "2026-07-03T19:35:51.986549Z",
+      "radar_score": 61.6,
       "is_new": true,
       "is_rising": false
     },
@@ -468,16 +468,16 @@
       "likes": 320,
       "last_modified": "2026-06-24T14:30:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T19:17:13.142344Z",
+      "last_seen_at": "2026-07-03T19:35:51.986549Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "General",
+        "Coding",
         "Reasoning",
-        "Coding"
+        "General"
       ],
       "tags": [
         "transformers",
@@ -509,7 +509,7 @@
         "region:us"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "collected_at": "2026-07-03T19:35:51.986549Z",
       "radar_score": 61.4,
       "is_new": true,
       "is_rising": false

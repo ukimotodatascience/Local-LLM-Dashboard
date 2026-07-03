@@ -184,6 +184,32 @@ class HuggingFaceCollector:
             if not is_llm:
                 continue
 
+            # GGUF非対応かつサポートファミリー外の不要モデルは除外する (openai-community/gpt2 などの汚染を防止)
+            if not has_gguf:
+                supported_families = [
+                    "deepseek",
+                    "qwen",
+                    "llama",
+                    "gemma",
+                    "mistral",
+                    "phi",
+                    "smollm",
+                    "command-r",
+                    "nemotron",
+                ]
+                has_family = False
+                for fam in supported_families:
+                    if fam == "phi":
+                        if re.search(r"(?:^|[^a-zA-Z])phi(?:[^a-zA-Z]|$)", id_lower):
+                            has_family = True
+                            break
+                    elif fam in id_lower:
+                        has_family = True
+                        break
+
+                if not has_family:
+                    continue
+
             # siblingsからGGUFの量子化一覧をパースする
             gguf_quants = []
             siblings = m.get("siblings") or []

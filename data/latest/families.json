@@ -23,7 +23,7 @@
     "new_model_count": 30,
     "rising_model_count": 0,
     "total_downloads": 38036864,
-    "total_likes": 40117,
+    "total_likes": 40118,
     "avg_radar_score": 44.9
   },
   {
@@ -32,17 +32,8 @@
     "new_model_count": 19,
     "rising_model_count": 0,
     "total_downloads": 6688441,
-    "total_likes": 13170,
+    "total_likes": 13171,
     "avg_radar_score": 36.9
-  },
-  {
-    "family": "Other",
-    "model_count": 18,
-    "new_model_count": 18,
-    "rising_model_count": 0,
-    "total_downloads": 47072018,
-    "total_likes": 16410,
-    "avg_radar_score": 48.1
   },
   {
     "family": "Gemma",
@@ -50,8 +41,17 @@
     "new_model_count": 17,
     "rising_model_count": 0,
     "total_downloads": 21197312,
-    "total_likes": 7549,
+    "total_likes": 7550,
     "avg_radar_score": 50.4
+  },
+  {
+    "family": "Other",
+    "model_count": 13,
+    "new_model_count": 13,
+    "rising_model_count": 0,
+    "total_downloads": 4509189,
+    "total_likes": 3046,
+    "avg_radar_score": 50.5
   },
   {
     "family": "Mistral",
