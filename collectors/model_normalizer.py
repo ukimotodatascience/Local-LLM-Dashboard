@@ -296,6 +296,23 @@ class ModelNormalizer:
 
             # 2. ファミリーとサイズが正確に合致し、かつモデルIDにファミリー名が含まれる場合 (フォールバック判定)
             if ol["family"] == family and size != "unknown":
+                # サードパーティ製かつ非GGUFのファインチューンモデルが、ベースモデルのOllamaページに誤マップされるのを防ぐ
+                hf_author = (
+                    model_id_lower.split("/")[0] if "/" in model_id_lower else ""
+                )
+                official_orgs = [
+                    "meta-llama",
+                    "google",
+                    "qwen",
+                    "deepseek-ai",
+                    "mistralai",
+                    "microsoft",
+                ]
+                is_official = hf_author in official_orgs
+                is_quantized = "gguf" in model_id_lower or "quantized" in model_id_lower
+                if not is_official and not is_quantized:
+                    continue
+
                 if self._sizes_match(size, ol.get("sizes", [])):
                     if family.lower() in model_id_lower:
                         # coder などのバリアント整合性チェック
@@ -404,18 +421,17 @@ class ModelNormalizer:
             else:
                 score -= 30
 
-            # 4. 世代トークンの整合性
+            # 4. 世代トークンの整合性 (不一致時や有無が異なる場合は即スキップして誤マッチを防止)
             hf_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower)
             or_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", or_id)
             if hf_gen_match and or_gen_match:
-                if hf_gen_match.group(1) == or_gen_match.group(1):
-                    score += 40
-                else:
-                    score -= 100
+                if hf_gen_match.group(1) != or_gen_match.group(1):
+                    continue
+                score += 40
             elif not hf_gen_match and not or_gen_match:
                 score += 20
             else:
-                score -= 30
+                continue
 
             # 5. Author/Org の整合性
             or_author = or_id.split("/")[0] if "/" in or_id else ""
@@ -517,12 +533,13 @@ class ModelNormalizer:
                 pass
 
         # 6. Vision / Multimodal
-        vision_kws = ["vision", "vl", "multimodal", "image"]
-        if (
-            any(kw in model_id_lower for kw in vision_kws)
-            or "multimodal" in tags_lower
-            or "vision" in tags_lower
-        ):
+        repo_name = (
+            model_id_lower.split("/")[-1] if "/" in model_id_lower else model_id_lower
+        )
+        has_vision_kw = any(
+            kw in repo_name for kw in ["vision", "multimodal", "image"]
+        ) or re.search(r"(?:^|[^a-zA-Z0-9])vl(?:[^a-zA-Z0-9]|$)", repo_name)
+        if has_vision_kw or "multimodal" in tags_lower or "vision" in tags_lower:
             use_cases.append("Vision")
 
         # 7. MoE (Mixture of Experts)

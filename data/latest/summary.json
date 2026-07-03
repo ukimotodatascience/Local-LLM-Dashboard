@@ -1,7 +1,7 @@
 {
   "total_models": 169,
   "total_downloads": 302739900,
-  "total_likes": 145217,
+  "total_likes": 145224,
   "top_rising_models": [],
   "top_new_models": [
     {
@@ -22,16 +22,16 @@
       "likes": 2584,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
+        "General",
         "Reasoning",
-        "Coding",
-        "General"
+        "Coding"
       ],
       "tags": [
         "gguf",
@@ -51,7 +51,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
+      "collected_at": "2026-07-03T19:17:13.142344Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -71,18 +71,18 @@
       "quantization": "GGUF (Q3_K_M, Q4_K_M, Q6_K etc.)",
       "license": "apache-2.0",
       "downloads": 329391,
-      "likes": 986,
+      "likes": 987,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "Reasoning",
-        "General"
+        "General",
+        "Reasoning"
       ],
       "tags": [
         "gguf",
@@ -103,9 +103,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
-      "radar_score": 62.9,
+      "growth_rate": 0.0010141987829614604,
+      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "radar_score": 63.0,
       "is_new": true,
       "is_rising": false
     },
@@ -124,10 +124,10 @@
       "quantization": "GGUF (Q4_K_M, Q5_K_M, Q6_K etc.)",
       "license": "mit",
       "downloads": 322780,
-      "likes": 675,
+      "likes": 677,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -145,9 +145,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
-      "radar_score": 62.4,
+      "growth_rate": 0.002962962962962963,
+      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "radar_score": 62.7,
       "is_new": true,
       "is_rising": false
     },
@@ -166,10 +166,10 @@
       "quantization": "GGUF (Q4_K_M, Q5_K_M, Q6_K etc.)",
       "license": "mit",
       "downloads": 287942,
-      "likes": 407,
+      "likes": 408,
       "last_modified": "2026-06-25T14:12:12.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -188,9 +188,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
-      "radar_score": 61.6,
+      "growth_rate": 0.002457002457002457,
+      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "radar_score": 61.9,
       "is_new": true,
       "is_rising": false
     },
@@ -212,16 +212,16 @@
       "likes": 320,
       "last_modified": "2026-06-24T14:30:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
+        "General",
         "Reasoning",
-        "Coding",
-        "General"
+        "Coding"
       ],
       "tags": [
         "transformers",
@@ -253,7 +253,7 @@
         "region:us"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
+      "collected_at": "2026-07-03T19:17:13.142344Z",
       "radar_score": 61.4,
       "is_new": true,
       "is_rising": false
@@ -278,16 +278,16 @@
       "likes": 2584,
       "last_modified": "2026-06-19T03:52:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
+        "General",
         "Reasoning",
-        "Coding",
-        "General"
+        "Coding"
       ],
       "tags": [
         "gguf",
@@ -307,7 +307,7 @@
         "conversational"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
+      "collected_at": "2026-07-03T19:17:13.142344Z",
       "radar_score": 65.1,
       "is_new": true,
       "is_rising": false
@@ -327,18 +327,18 @@
       "quantization": "GGUF (Q3_K_M, Q4_K_M, Q6_K etc.)",
       "license": "apache-2.0",
       "downloads": 329391,
-      "likes": 986,
+      "likes": 987,
       "last_modified": "2026-06-19T09:31:48.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
-        "Reasoning",
-        "General"
+        "General",
+        "Reasoning"
       ],
       "tags": [
         "gguf",
@@ -359,9 +359,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
-      "radar_score": 62.9,
+      "growth_rate": 0.0010141987829614604,
+      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "radar_score": 63.0,
       "is_new": true,
       "is_rising": false
     },
@@ -380,10 +380,10 @@
       "quantization": "GGUF (Q4_K_M, Q5_K_M, Q6_K etc.)",
       "license": "mit",
       "downloads": 322780,
-      "likes": 675,
+      "likes": 677,
       "last_modified": "2026-06-25T14:31:04.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -401,9 +401,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
-      "radar_score": 62.4,
+      "growth_rate": 0.002962962962962963,
+      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "radar_score": 62.7,
       "is_new": true,
       "is_rising": false
     },
@@ -422,10 +422,10 @@
       "quantization": "GGUF (Q4_K_M, Q5_K_M, Q6_K etc.)",
       "license": "mit",
       "downloads": 287942,
-      "likes": 407,
+      "likes": 408,
       "last_modified": "2026-06-25T14:12:12.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
@@ -444,9 +444,9 @@
         "region:us",
         "conversational"
       ],
-      "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
-      "radar_score": 61.6,
+      "growth_rate": 0.002457002457002457,
+      "collected_at": "2026-07-03T19:17:13.142344Z",
+      "radar_score": 61.9,
       "is_new": true,
       "is_rising": false
     },
@@ -468,16 +468,16 @@
       "likes": 320,
       "last_modified": "2026-06-24T14:30:11.000Z",
       "first_seen_at": "2026-07-02T14:06:26.208537Z",
-      "last_seen_at": "2026-07-03T18:57:18.708624Z",
+      "last_seen_at": "2026-07-03T19:17:13.142344Z",
       "has_gguf": true,
       "has_ollama": false,
       "context_length": null,
       "pricing": null,
       "description": null,
       "use_cases": [
+        "General",
         "Reasoning",
-        "Coding",
-        "General"
+        "Coding"
       ],
       "tags": [
         "transformers",
@@ -509,7 +509,7 @@
         "region:us"
       ],
       "growth_rate": 0.0,
-      "collected_at": "2026-07-03T18:57:18.708624Z",
+      "collected_at": "2026-07-03T19:17:13.142344Z",
       "radar_score": 61.4,
       "is_new": true,
       "is_rising": false
