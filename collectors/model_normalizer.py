@@ -209,6 +209,40 @@ class ModelNormalizer:
             "quantization": quant,
         }
 
+    def _parse_size_to_num(self, size_str):
+        """'135M' や '0.1B' をB単位のfloat数値に変換する"""
+        if not size_str:
+            return None
+        s = size_str.upper()
+        try:
+            if "M" in s:
+                val = float(s.replace("M", ""))
+                return val / 1000.0  # 135M -> 0.135B
+            elif "B" in s:
+                return float(s.replace("B", ""))
+        except ValueError:
+            pass
+        return None
+
+    def _sizes_match(self, hf_size, ol_sizes):
+        """HFモデルのサイズとOllamaのサイズ一覧が一致するか比較する（MとBの変換考慮）"""
+        hf_num = self._parse_size_to_num(hf_size)
+        if hf_num is None:
+            return False
+
+        for ol_s in ol_sizes:
+            ol_num = self._parse_size_to_num(ol_s)
+            if ol_num is None:
+                continue
+            # 近似一致（差が0.05B以内、例: 135M(0.135B) と 0.1B、360M(0.36B) と 0.4B）
+            if abs(hf_num - ol_num) <= 0.05:
+                return True
+            # 1B以上の場合は 8B と 8.0B などの比較
+            if hf_num >= 1.0 and ol_num >= 1.0 and abs(hf_num - ol_num) < 0.1:
+                return True
+
+        return False
+
     def _match_ollama(self, model_id, family, size, ol_models):
         """Ollamaカタログとのマッチングを行い、対応状況とURLを返す"""
         model_id_lower = model_id.lower()
@@ -253,16 +287,14 @@ class ModelNormalizer:
                         continue
 
                 if size != "unknown":
-                    ol_sizes = [s.upper() for s in ol.get("sizes", [])]
-                    if size in ol_sizes:
+                    if self._sizes_match(size, ol.get("sizes", [])):
                         return True, ol["ollama_url"]
                 else:
                     return True, ol["ollama_url"]
 
             # 2. ファミリーとサイズが正確に合致し、かつモデルIDにファミリー名が含まれる場合 (フォールバック判定)
             if ol["family"] == family and size != "unknown":
-                ol_sizes = [s.upper() for s in ol.get("sizes", [])]
-                if size in ol_sizes:
+                if self._sizes_match(size, ol.get("sizes", [])):
                     if family.lower() in model_id_lower:
                         # coder などのバリアント整合性チェック
                         is_coder_hf = "coder" in model_id_lower
@@ -394,6 +426,15 @@ class ModelNormalizer:
             else:
                 if or_author == hf_author:
                     score += 10
+                else:
+                    # サードパーティ製モデルの場合、author名かリポジトリ名が相互にオーバーラップしていることを必須とする
+                    # 例: "NousResearch" が "nousresearch/hermes-3-llama-3.1-8b" に含まれているか
+                    if hf_author and or_author:
+                        author_overlap = (hf_author in or_id) or (
+                            or_author in model_id_lower
+                        )
+                        if not author_overlap:
+                            score -= 150
 
             # 6. トークン類似性
             hf_name = model_id_lower.split("/")[-1]
@@ -585,10 +626,8 @@ class ModelNormalizer:
             prev_dl = prev_model.get("downloads", 0)
             prev_likes = prev_model.get("likes", 0)
 
-            dl_growth = (item["downloads"] - prev_dl) / prev_dl if prev_dl > 0 else 0.0
-            likes_growth = (
-                (item["likes"] - prev_likes) / prev_likes if prev_likes > 0 else 0.0
-            )
+            dl_growth = (item["downloads"] - prev_dl) / max(1, prev_dl)
+            likes_growth = (item["likes"] - prev_likes) / max(1, prev_likes)
 
             if dl_growth >= 0.30 or likes_growth >= 0.30:
                 return True
