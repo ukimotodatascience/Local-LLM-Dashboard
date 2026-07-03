@@ -24,7 +24,9 @@ class ModelNormalizer:
             model_id = hf["model_id"]
 
             # モデル名等のパース
-            parsed = self._parse_model_info(model_id, hf.get("tags", []), hf.get("gguf_quants"))
+            parsed = self._parse_model_info(
+                model_id, hf.get("tags", []), hf.get("gguf_quants")
+            )
 
             # Ollama対応状況の推定・紐付け
             has_ollama, ollama_url = self._match_ollama(
@@ -221,7 +223,10 @@ class ModelNormalizer:
 
             # 1. カタログモデル名がモデルIDに含まれるか (例: "llama3.2" in "meta-llama/Llama-3.2-3B")
             # P2指摘対応: 単語境界でマッチすることを要求
-            if re.search(r"(?:^|[^a-zA-Z0-9])" + re.escape(ol_name) + r"(?:[^a-zA-Z0-9]|$)", model_id_lower):
+            if re.search(
+                r"(?:^|[^a-zA-Z0-9])" + re.escape(ol_name) + r"(?:[^a-zA-Z0-9]|$)",
+                model_id_lower,
+            ):
                 # coderなどのバリアント整合性チェック
                 is_coder_hf = "coder" in model_id_lower
                 is_coder_ol = "coder" in ol_name
@@ -233,16 +238,16 @@ class ModelNormalizer:
                 if gen_match:
                     gen_token = gen_match.group(1)
                     if gen_token == "3" and (
-                        "3.1" in model_id_lower or "3.2" in model_id_lower or "3.3" in model_id_lower
+                        "3.1" in model_id_lower
+                        or "3.2" in model_id_lower
+                        or "3.3" in model_id_lower
                     ):
                         continue
                     if gen_token == "2" and ("2.5" in model_id_lower):
                         continue
                     # 世代トークンが独立した境界で含まれているか
                     if not re.search(
-                        r"(?:^|[^a-zA-Z])"
-                        + re.escape(gen_token)
-                        + r"(?:[^a-zA-Z]|$)",
+                        r"(?:^|[^a-zA-Z])" + re.escape(gen_token) + r"(?:[^a-zA-Z]|$)",
                         model_id_lower,
                     ):
                         continue
@@ -275,7 +280,9 @@ class ModelNormalizer:
                         if gen_match:
                             gen_token = gen_match.group(1)
                             if gen_token == "3" and (
-                                "3.1" in model_id_lower or "3.2" in model_id_lower or "3.3" in model_id_lower
+                                "3.1" in model_id_lower
+                                or "3.2" in model_id_lower
+                                or "3.3" in model_id_lower
                             ):
                                 continue
                             if gen_token == "2" and ("2.5" in model_id_lower):
@@ -314,11 +321,7 @@ class ModelNormalizer:
             "mistralai",
             "microsoft",
         ]
-        hf_author = (
-            model_id_lower.split("/")[0]
-            if "/" in model_id_lower
-            else ""
-        )
+        hf_author = model_id_lower.split("/")[0] if "/" in model_id_lower else ""
 
         for or_m in or_models:
             or_id = or_m["model_id"].lower()
@@ -369,9 +372,7 @@ class ModelNormalizer:
                 score -= 30
 
             # 4. 世代トークンの整合性
-            hf_gen_match = re.search(
-                rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower
-            )
+            hf_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", model_id_lower)
             or_gen_match = re.search(rf"{fam_key}-?(\d+(?:\.\d+)?)", or_id)
             if hf_gen_match and or_gen_match:
                 if hf_gen_match.group(1) == or_gen_match.group(1):
@@ -397,8 +398,8 @@ class ModelNormalizer:
             # 6. トークン類似性
             hf_name = model_id_lower.split("/")[-1]
             or_name = or_id.split("/")[-1]
-            hf_tokens = set(re.findall(r'[a-z0-9]+', hf_name))
-            or_tokens = set(re.findall(r'[a-z0-9]+', or_name))
+            hf_tokens = set(re.findall(r"[a-z0-9]+", hf_name))
+            or_tokens = set(re.findall(r"[a-z0-9]+", or_name))
             intersection = hf_tokens.intersection(or_tokens)
             if hf_tokens:
                 score += int((len(intersection) / len(hf_tokens)) * 20)
