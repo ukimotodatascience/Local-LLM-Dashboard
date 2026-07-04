@@ -279,14 +279,6 @@ class ModelNormalizer:
                         continue
                     if gen_token == "2" and ("2.5" in model_id_lower):
                         continue
-                    # 世代トークンが独立した境界（非英数字）で含まれているか
-                    if not re.search(
-                        r"(?:^|[^a-zA-Z0-9])"
-                        + re.escape(gen_token)
-                        + r"(?:[^a-zA-Z0-9]|$)",
-                        model_id_lower,
-                    ):
-                        continue
 
                 if size != "unknown":
                     if self._sizes_match(size, ol.get("sizes", [])):
@@ -415,7 +407,11 @@ class ModelNormalizer:
                 or "chat" in model_id_lower
                 or "it" in model_id_lower
             )
-            is_instruct_or = "instruct" in or_id or "chat" in or_id
+            is_instruct_or = (
+                "instruct" in or_id
+                or "chat" in or_id
+                or re.search(r"(?:^|[^a-zA-Z0-9])it(?:[^a-zA-Z0-9]|$)", or_id)
+            )
             if is_instruct_hf != is_instruct_or:
                 continue
             score += 10
@@ -438,7 +434,7 @@ class ModelNormalizer:
                 if or_author == hf_author:
                     score += 30
                 else:
-                    score -= 100
+                    continue  # 不一致の公式モデルは即座に除外
             else:
                 if or_author == hf_author:
                     score += 10
